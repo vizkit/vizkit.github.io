@@ -34,3 +34,16 @@ function showDivs2(n) {
   }
   x[slideIndex2-1].style.display = "block";
 }
+
+
+function enfants(){
+/*  sys.log("okok");
+  var element = document.getElementById("pointLien");
+  element.href = "graphiques_enfants.html";*/
+}
+
+function adultes(){
+/*  sys.log("okok");
+  var element = document.getElementById("pointLien");
+  element.href = "graphiques_adultes.html";*/
+}
