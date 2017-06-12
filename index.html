@@ -1,28 +1,539 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Hank Quinlan, Horrible Cop</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Hank Quinlan!</h1>
-				<p>I'm best known as the horrible cop from <em>A Touch of Evil</em> Don't trust me. <a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-        		<li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vizkit</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!-- Our CSS -->
+    <link href="vendor/ourStyle.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/freelancer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="#page-top">Vizkit</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#intro">Introduction</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#guide">Guide d'utilisation</a>
+                    </li>
+                    <li class="page-scroll">
+                      <a href="#vous_jouer">A vous de jouer!</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#historique">Historique</a>
+                    </li>
+                    <li class="page-scroll">
+                        <a href="#galerie">Galerie</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container" id="maincontent" tabindex="-1">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-text">
+
+                        <h1 class="name">Bienvenue sur Vizkit!</h1>
+
+                        <span class="skills">Venez découvrir Vizkit </span>
+                        <br/>
+                        <span class="skills">et préparer votre atelier !</span>
+                        <br/>
+                        <span class="skills">&#9786;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Introduction Grid Section -->
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Introduction</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class = "row">
+              <div class = "col-lg-8 col-lg-offset-2">
+                <p>  Vous bloquez sur les courbes de la bourse ?
+                  Vous ne comprenez pas ce diagramme que vous a transmis votre banque ?
+                  Vous ne savez jamais quel type de graphe choisir ?
+                  Aujourd'hui, nous voyons des visualisations de données partout... VizKit est un
+                  atelier qui va vous permettre de l'importance des visualisations,
+                  et tout l'impact qu'elles peuvent avoir... en en faisant une vous-même !
+                  Vous avez seulement besoin
+                    <a href= "#vous_jouer">
+                    des feuilles que vous trouverez sur ce site </a>
+                    (ne nous remerciez pas, c’est cadeau &#9786;), de participants et du kit
+                    (que vous pouvez acheter ou recréer en DIY chez vous). Alors n'hésitez plus et rejoignez
+                    <a href = "#historique">
+                      la communauté des personnes ayant essayés VizKit</a>
+                      comme l’ONU !
+                  </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guide d'utilisation Section -->
+    <section class="success" id="guide">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Guide d'utilisation</h2>
+                    <hr class="star-light">
+                </div>
+            </div>
+            <div class = "row">
+              <div class= "col-lg-12">
+
+                  <ul class = "infoPratique">
+
+                    <li>
+                      <div class = "col-lg-2">
+                         <i class = "fa fa-clock-o" style="font-size:48px"> </i> <br />Temps requis : 2h
+                       </div>
+                    </li>
+
+                    <li>
+                      <div class = "col-lg-2">
+                      <i class="fa fa-user-o" style="font-size:48px"></i> <br /> Une quinzaine de personnes
+                    </div>
+                     </li>
+                    <li>
+                      <div class = "col-lg-2">
+                        <i class = "fa fa-file" style="font-size:45px"> </i> <br />
+                       <a class = "site_bleu" href = "#vous_jouer"> Les documents présents sur ce site </a>
+                     </div>
+                      </li>
+
+                    <li>
+                      <div class = "col-lg-2">
+                        <i class = "fa fa-pencil"style="font-size:48px"></i> <br /> Des feuilles, Post-Its et crayons
+                    </div>
+                    </li>
+                    <li>
+                      <div class = "col-lg-2">
+                        <i class = "fa fa-laptop"style="font-size:48px"></i> <br /> Un ordinateur
+                      </div>
+                    </li>
+                    <li>
+                      <div class = "col-lg-2">
+                        <i class = "fa fa-picture-o" style="font-size:48px"> </i> <br /> Un projecteur
+                      </div>
+                    </li>
+                  </ul>
+
+              </div>
+            </div>
+          <br />
+          <div id= "guideTextBefore">
+            <p> Avant la séance : disposer les tables en cercles et disposer le matériel sur les tables </p>
+          </div>
+          <br />
+          <div id="choix" class="row">
+            <row>
+              <div id="duree" class="col-lg-3 col-xs-3 col-md-3">
+                <p>Durée : </p>
+                <div class="btn-group">
+                  <button id="dur_cou" type="radio" checked class="btn btn-default">Courte (1h-1h30)</button>
+                  <button id="dur_lon" type="radio" class="btn btn-default">Longue (2h-3h)</button>
+                </div>
+              </div>
+              <div id="public" class="col-lg-3 col-xs-3 col-md-3">
+                <p>Public :</p>
+                <div class="btn-group">
+                  <button id="pub_enf" class="btn btn-default" type="submit">Enfants</button>
+                  <button id="pub_adu" class="btn btn-default" type="submit">Adultes</button>
+                </div>
+              </div>
+              <div id="Nombres de personnes" class="col-lg-3 col-xs-3 col-md-3">
+                <p>Nombre de personnes :</p>
+                <div class="center">
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button type="button" id="minusBtn" class="btn btn-default btn-number"  data-type="minus" data-field="quant[2]">
+                        <span class="glyphicon glyphicon-minus"></span>
+                      </button>
+                    </span>
+                    <input type="text" id="inputnb" name="quant[2]" class="form-control input-number" style="" value="16" min="4" max="20">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]">
+                        <span class="glyphicon glyphicon-plus"></span>
+                      </button>
+                    </span>
+                  </div>
+	                <p></p>
+                </div>
+              </div>
+              <div id="scénario" class="col-lg-3 col-xs-3 col-md-3">
+                <p>Scénario :</p>
+                <div class="btn-group">
+                  <button id="sce_1" class="btn btn-default" type="submit">Dataset 1</button>
+                  <button id="sce_2" class="btn btn-default" type="submit">Dataset 2</button>
+                </div>
+              </div>
+            </row>
+          </div>
+          <br />
+
+          <div id="car">
+            <div id = "myCarousel" class="w3-content w3-display-container">
+
+              <div  class="mySlides row">
+                <span class="w3-display-topmiddle w3-container w3-padding-8 w3-white">
+                  Phase 1 : Presenting
+                </span>
+                <br />
+                  <div  class="col-lg-2 col-lg-offset-1">
+                    <img src = "img/presenting.png" class="img-responsive center-block" />
+                  </div>
+                  <div class="col-lg-8">
+                    <h5> Phase 1.1 </h5>
+                    <p> Expliquer l'atelier </p>
+                    <h5> Phase 1.2 </h5>
+                    <p>Il faut donner le contexte des datasets ainsi que les datasets.
+                    Par exemple si le data présente des données d'un compte bancaire on peut
+                    expliquer au groupe qu'ils doivent aider un ami virtuel qui a besoin d'aide
+                    par rapport à ses dépenses</p>
+                  </div>
+              </div>
+                <div class="mySlides row">
+                  <span class="w3-display-topmiddle w3-container w3-padding-8 w3-white">
+                    Phase 2 : Authoring
+                  </span>
+                  <br />
+                    <div class="col-lg-2 col-lg-offset-1">
+                      <img src = "img/authoring.png" class="img-responsive center-block"/>
+                    </div>
+                    <div class="col-lg-8">
+                      <h5> Phase 2.1 </h5>
+                      <p>Les groupes sont maintenant inviter à créer une première visualisation
+                      avec le dataset qu'ils ont reçu.</p>
+                      <h5> Phase 2.2 </h5>
+                      <p>Les groupes vont alors se demander au sein du groupe comment faire pour
+                      représenter au mieux les datas.</p>
+                    </div>
+                </div>
+
+                <div class="mySlides row">
+                  <span class="w3-display-topmiddle w3-container w3-padding-8 w3-white">
+                    Phase 3 : Reading
+                  </span>
+                  <br />
+
+                    <div class="col-lg-2 col-lg-offset-1">
+                      <img src = "img/reading.png" class="img-responsive center-block"/>
+                    </div>
+                    <div class="col-lg-8">
+                      <p>Donner à présent les feuilles questionnaires et personae à chaque groupe.
+                      Cela devrait leur permettre de comprendre les traits importants des données
+                      qu'ils ont réussi à rendre compte dans leur visualisation et ceux qu'ils
+                      n'ont pas réussi. Les personae doivent leur donner une vision plus pratique
+                      des données qu'ils ont manipulées.</p>
+                    </div>
+                </div>
+                <div class="mySlides row">
+                  <span class="w3-display-topmiddle w3-container w3-padding-8 w3-white">
+                    Phase 4 : Editing
+                  </span>
+                  <br />
+
+                    <div class="col-lg-2 col-lg-offset-1">
+                      <img src = "img/editing.png" class="img-responsive center-block"/>
+                    </div>
+                    <div class="col-lg-8">
+                      <h5> Phase 4.1 </h5>
+                      <p>En reprenant les remarques qu'ils se sont faites à l'étape précédente,
+                      les groupes peuvent à présent reprendre leur visualisation et l'améliorer </p>
+                      <h5> Phase 4.2 </h5>
+                      <p> Vous pouvez à présent leur donner des stylos, des post-its ou tout matériel
+                      qui peut leur permettre d'améliorer leur visualisation.</p>
+                    </div>
+                </div>
+
+                <div class="mySlides row">
+                  <span class="w3-display-topmiddle w3-container w3-padding-8 w3-white">
+                    Phase 5 : Critiquing
+                  </span>
+                  <br />
+
+                    <div class="col-lg-2 col-lg-offset-1">
+                      <img src = "img/critiquing.png" class="img-responsive center-block"/>
+                    </div>
+                    <div class="col-lg-8">
+                      <h5> Phase 5.1 </h5>
+                      <p>Donner les feuilles d'évaluation des autres groupes.</p>
+                      <h5> Phase 5.2 </h5>
+                      <p>Chaque groupe choisit un évaluateur et un visiteur parmi eux. Les visiteurs
+                      doivent alors se déplacer sur une autre table.
+                      quelles sont les informations qu'il arrive à retirer de la visualisation</p>
+                      <h5> Phase 5.3 </h5>
+                      <p>Chaque visiteur explique à l'évaluateur de la table sur laquelle il se trouve
+                      qu'il voit.</p>
+                      <h5> Phase 5.4 </h5>
+                      <p>Les évaluateurs font des croix dans le tableau qu'on leur a donné pour
+                      savoir quels sont les éléments qui ont été trouvés et ceux qui ne l'ont pas
+                      été.</p>
+                    </div>
+                </div>
+                <div class="mySlides row">
+                  <span class="w3-display-topmiddle w3-container w3-padding-8 w3-white">
+                    Phase 6 : Conclusion
+                  </span>
+                  <br />
+
+                  <div class="col-lg-2 col-lg-offset-1">
+                    <img src = "img/conclusion.png" class="img-responsive center-block" />
+                  </div>
+                  <div class="col-lg-8">
+                    <h5> Phase 6.1 </h5>
+                    <p>Laisser les groupes discuter de leurs différentes visualisations. Dire
+                    alors que certains groupes ont les mêmes données et leur faire remarquer
+                    les différentes visualisations possibles à partir d'un même set de données.</p>
+                    <h5> Phase 6.2 </h5>
+                    <p>Présenter alors différentes visualisations possibles pour le type de set
+                    de données sur lesquelles ils ont travaillés mais aussi de manière plus
+                    général.</p>
+                  </div>
+                </div>
+
+                <div class="mySlides row">
+                  <span class="w3-display-topmiddle w3-container w3-padding-8 w3-white">
+                    Phase PI
+                  </span>
+                  <br />
+
+                  <div class="col-lg-2 col-lg-offset-1">
+                    <img src = "img/bravo.png" class="img-responsive center-block" />
+                  </div>
+                  <div class="col-lg-8">
+                    <p>Bravo! Vous avez réussi à sensibiliser vos participants à l'importance
+                    de la visualisation de données. Vous pouvez maintenant retrouver ce
+                    guide d'utilisation sous forme de pdf
+                    <a href = "#vous_jouer">
+                      ici
+                    </a></p>
+                  </div>
+                </div>
+              <button class="w3-button w3-display-left w3-border w3-round-xxlarge" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-display-right w3-border w3-round-xxlarge" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- A vous de jouer Section -->
+    <section id="vous_jouer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>A vous de jouer! </h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class = "row">
+              <div class = "col-lg-8 col-lg-offset-2">
+              <p>
+                Si vous avez déjà compris les instructions pour devenir l’animateur de l’atelier, c’est parti ! Ici vous pouvez trouver des datasets selon les participants que vous voulez diriger pendant l’atelier.
+                En plus, vous pouvez trouver des personas et les questions liés à chaque dataset. Et aussi la fiche pour évaluer la performance des autres groups.
+              </p>
+              <p>
+                ___ <br />
+                Ici vous trouverez tout ce dont vous aurez besoin pour conduire un atelier !<br />
+                Dans l’archive resources.zip :<br />
+                <ul>
+                  <li> liste.pdf : Cette liste (juste pour vous) </li>
+                  <li> etapes.pdf : Votre petite liste d’étapes à suivre pendant l’atelier (juste pour vous)</li>
+                  <li> presentation.pdf & presentation.pptx : La présentation que vous pourrez utiliser tout au long de votre atelier (à vous de présenter !)</li>
+                  <li> datasheets.pdf : Les jeux de données pour chaque groupe (à imprimer et distribuer)</li>
+                  <li> contexte.pdf : Le context du thème des datasheets (à vous de présenter !)</li>
+                  <li> questions.pdf : Les fiches de questions pour tous les groupes (à imprimer et distribuer)</li>
+                  <li> evaluation.pdf : Les feuilles d’évaluation pour tous les groupes (à imprimer et distribuer)</li>
+                </ul>
+                Voilà, bon courage ! <br />
+                ___
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+        <!-- historique Section -->
+        <section  class="success" id="historique">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Historique</h2>
+                        <hr class="star-light">
+                    </div>
+                </div>
+                <div class = "row">
+                  <div class = "col-lg-8 col-lg-offset-2">
+                  <h4> Les étapes </h4>
+                    <p>
+                      Le VizKit, ou Visualization Kit a été créé en 2014 par Samuel Huron, Sheelagh Carpendale, Jeremy Boy et Jean-Daniel Fekete dans le but de permettre une compréhension de ce qu’est la visualisation par des publics très disparates. Il s’agit d’une séance pouvant durer de 2h à 3h, pendant laquelle un présentateur anime le workshop pour un groupe d’une quinzaine à une vingtaine de personnes (le nombre est modulable).
+                      Ce Kit est utilisé dans plusieurs contextes au sein de plusieurs institutions pour faire prendre conscience au public l’importance d’une visualisation réussie et précise.
+                    </p>
+                  <h4> Les cas d'utilisation </h4>
+                    <p>
+                      Le Vizkit a été utilisé dans plusieurs contextes. Ne serait-ce qu’au niveau des âges, il a été utilisé auprès de jeunes enfants et de personnes adultes. Plusieurs établissements ont aussi utilisé le kit dans des buts de sensibilisation à l’importance de la représentation des données. La cité des Sciences a organisé des séances auprès des jeunes enfants en 2017 et l’ONU l’utilise auprès de ses membres ou de diplomates pour insister sur la représentation.
+                    </p>
+                  <h4> Où? </h4>
+                  <p>
+                    Partout. Voila.
+                  </p>
+                </div>
+              </div>
+            </div>
+        </section>
+
+        <!-- Galerie Section -->
+        <section id="galerie">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Galerie</h2>
+                        <hr class="star-primary">
+                    </div>
+                </div>
+
+                <div class = "row">
+                  <div class = "col-lg-8 col-lg-offset-2">
+                <p>
+                  Voilà! Ici vous pouvez trouver des photos de plusieurs séances de VizKit. <br />
+                  Si vous en avez faite une et si vous êtes intéressé pour ajouter vos photos ici, contactez-nous !
+                </p><br />
+                <h4> Futur en Seine - 2014 - </h4>
+              </div>
+            </div>
+                <div id = "myCarousel2" class="w3-content w3-display-container">
+                  <div class = "mySlides2 row">
+                    <div class="col-lg-2 col-lg-offset-4">
+                    <img src = "img/seine1.jpg" />
+                    </div>
+                  </div>
+                    <div class = "mySlides2 row">
+                        <div class="col-lg-2 col-lg-offset-4">
+                        <img src = "img/seine2.jpg" />
+                        </div>
+                      </div>
+                      <div class = "mySlides2 row">
+                          <div class="col-lg-2 col-lg-offset-4">
+                          <img src = "img/seine3.jpg" />
+                          </div>
+                        </div>
+                        <div class = "mySlides2 row">
+                            <div class="col-lg-2 col-lg-offset-4">
+                            <img src = "img/seine4.jpg" />
+                            </div>
+                          </div>
+                  <button class="w3-button w3-display-left w3-border w3-round-xxlarge" onclick="plusDivs2(-1)">&#10094;</button>
+                  <button class="w3-button w3-display-right w3-border w3-round-xxlarge" onclick="plusDivs2(1)">&#10095;</button>
+                </div>
+
+
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        Copyright &copy; Your Website 2016
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+    <div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+        <a class="btn btn-primary" href="#page-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>
+    </div>
+
+
+    <!-- Our scripts -->
+    <script src="plus_minus_button.js"></script>
+    <script src="carousel.js"></script>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/freelancer.min.js"></script>
+
+</body>
+
+<script src = "js/carousel.js"></script>
+
+
 </html>
