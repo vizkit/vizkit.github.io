@@ -3,10 +3,10 @@
 //http://jsfiddle.net/laelitenetwork/puJ6G/
 $( document ).ready(function() {
   //alert('hello');
-    var nb = 16;
+    var nb = 13;
     var min = 4;
     var max = 20;
-    //$("#inputnb").val(nb);
+    $("#inputnb").val(nb);
     $('.btn-number').click(function(e){
         e.preventDefault();
 

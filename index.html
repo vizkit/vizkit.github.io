@@ -94,9 +94,11 @@
 
                         <h1 class="name">Bienvenue sur Vizkit!</h1>
 
-                        <span class="skills">Venez découvrir Vizkit </span>
+                        <span class="skills">Venez découvrir et préparer </span>
                         <br/>
-                        <span class="skills">et préparer votre atelier !</span>
+                        <span class="skills">l'atelier pour apprendre à</span>
+                        <br/>
+                        <span class="skills"> faire de la dataviz !</span>
                         <br/>
                         <span class="skills">&#9786;</span>
                     </div>
@@ -203,20 +205,20 @@
               <div id="public" class="col-lg-3 col-xs-3 col-md-3">
                 <p>Public :</p>
                 <div class="btn-group">
-                  <button id="pub_enf" class="btn btn-default" type="submit" onclick= "enfants()">Enfants</button>
-                  <button id="pub_adu" class="btn btn-default" type="submit" onclick= "adultes()">Adultes</button>
+                  <button id="pub_enf" class="btn btn-default" type="submit">Enfants</button>
+                  <button id="pub_adu" class="btn btn-default" type="submit">Adultes</button>
                 </div>
               </div>
               <div id="Nombres de personnes" class="col-lg-3 col-xs-3 col-md-3">
                 <p>Nombre de personnes :</p>
-                <div class="center">
+                <div class = "center">
                   <div class="input-group">
                     <span class="input-group-btn">
                       <button type="button" id="minusBtn" class="btn btn-default btn-number"  data-type="minus" data-field="quant[2]">
                         <span class="glyphicon glyphicon-minus"></span>
                       </button>
                     </span>
-                    <input type="text" id="inputnb" name="quant[2]" class="form-control input-number" style="" value="16" min="4" max="20">
+                    <input type="text" id="inputnb" name="quant[2]" class="form-control input-number" style="" value="14" min="4" max="20">
                     <span class="input-group-btn">
                       <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]">
                         <span class="glyphicon glyphicon-plus"></span>
@@ -227,7 +229,7 @@
                 </div>
               </div>
               <div id="scénario" class="col-lg-3 col-xs-3 col-md-3">
-                <p>Scénario :  <a id="pointLien" class="fa fa-question-circle-o" href="graphiques_enfants.html"></a></p>
+                <p>Scénario :  <a id = "pointLien" href="graphiques.html"> <i class="fa fa-question-circle-o"></i> </a></p>
                 <div class="btn-group">
                   <button id="sce_1" class="btn btn-default" type="submit">Dataset 1</button>
                   <button id="sce_2" class="btn btn-default" type="submit">Dataset 2</button>
@@ -401,12 +403,12 @@
               <p>
                 ___ <br />
                 Ici vous trouverez tout ce dont vous aurez besoin pour conduire un atelier !<br />
-                Dans l’archive resources.zip :<br />
+                Dans l’archive <a href= "identification.html"> ressources.zip </a> :<br />
                 <ul>
                   <li> liste.pdf : Cette liste (juste pour vous) </li>
-                  <li> <a href = "donnees/guideutilisation.pdf" >etapes.pdf</a> : Votre petite liste d’étapes à suivre pendant l’atelier (juste pour vous)</li>
+                  <li> etapes.pdf : Votre petite liste d’étapes à suivre pendant l’atelier (juste pour vous)</li>
                   <li> presentation.pdf & presentation.pptx : La présentation que vous pourrez utiliser tout au long de votre atelier (à vous de présenter !)</li>
-                  <li> <a href="donnees/donnees.zip">datasheets.pdf </a>: Les données/questionnaires pour chaque groupe (à imprimer et distribuer)</li>
+                  <li> datasheets.pdf : Les données/questionnaires pour chaque groupe (à imprimer et distribuer)</li>
                   </ul>
                 Voilà, bon courage ! </br>
                 ___
@@ -437,10 +439,6 @@
                     <p>
                       Le Vizkit a été utilisé dans plusieurs contextes. Ne serait-ce qu’au niveau des âges, il a été utilisé auprès de jeunes enfants et de personnes adultes. Plusieurs établissements ont aussi utilisé le kit dans des buts de sensibilisation à l’importance de la représentation des données. La cité des Sciences a organisé des séances auprès des jeunes enfants en 2017 et l’ONU l’utilise auprès de ses membres ou de diplomates pour insister sur la représentation.
                     </p>
-                  <h4> Où? </h4>
-                  <p>
-                    Partout. Voila.
-                  </p>
                 </div>
               </div>
             </div>
@@ -524,7 +522,6 @@
     <!-- Our scripts -->
     <script src="js/dynamic_carousel.js"></script>
     <script src="js/plus_minus_button.js"></script>
-    <script src="js/dynamic_carousel.js"></script>
     <script src="js/carousel.js"></script>
     <script src="js/ourScript.js"></script>
 

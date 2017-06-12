@@ -3,7 +3,7 @@
   //on initialise les variables avec les valeurs par défaut
     var duree = "longue";
     var pub = "adu";
-    var nbDePersonnes = 16;
+    var nbDePersonnes = 13;
     var sce = 1;
   //on appuie les boutons en conséquence
     $("#dur_lon").addClass("active");
@@ -64,7 +64,6 @@
       if(pub == "enf"){
         $("#pointLien").attr('href','graphiques_enfants.html');
       }else{
-        alert("ok");
         $("#pointLien").attr('href','graphiques_adultes.html');
       }
     });
