@@ -25,16 +25,23 @@ window.onload = function() {
             },
 
             axisX: {
-                //reversed : true,
+                reversed : true,
                 titleFontSize: 16,
-                title: "Evolution"
+                labelFontSize: 12,
+                labelAutoFit: true,
+                //  title: "Profession"
+              },
+            axisX2:{
+                title: "Diplôme"
             },
             axisY: {
                 // reversed : true,
                 titleFontSize: 16,
-                title: "Quantité"
+                title: "Quantité (%)"
             },
-
+            legend:{
+              maxWidth: 300,
+             },
             data: [{
                     type: type,
                     showInLegend: true,
@@ -54,6 +61,30 @@ window.onload = function() {
                     showInLegend: true,
                     dataPoints: getDataPointsFromCSV(data, 3, t),
                     legendText: getName(data, 3, t)
+                }
+                ,
+                {
+                    type: type,
+                    showInLegend: true,
+                    dataPoints: getDataPointsFromCSV(data, 4, t),
+                    legendText: getName(data, 4, t)
+
+
+                },
+                {
+                    type: type,
+                    showInLegend: true,
+                    dataPoints: getDataPointsFromCSV(data, 5, t),
+                    legendText: getName(data, 5, t)
+                }
+                ,
+                {
+                    type: type,
+                    showInLegend: true,
+                    dataPoints: getDataPointsFromCSV(data, 6, t),
+                    legendText: getName(data, 6, t)
+
+
                 }
             ]
         });
@@ -76,6 +107,7 @@ window.onload = function() {
                 labelAutoFit: true,  // change to false
                 title: "Profession"
             },
+
             axisY: {
                 // reversed : true,
                 titleFontSize: 16,
@@ -104,12 +136,6 @@ window.onload = function() {
                     showInLegend: true,
                     dataPoints: getDataPointsFromCSV(data, 3, t),
                     legendText: getName(data, 3, t)
-                },
-                {
-                    type: type,
-                    showInLegend: true,
-                    dataPoints: getDataPointsFromCSV(data, 4, t),
-                    legendText: getName(data, 4, t)
                 }
             ]
         });
@@ -133,30 +159,29 @@ window.onload = function() {
 
                 dataPoints.push({
                 //    x: parseInt(firstLinepoints[j]),
-                    y: parseInt(points[j]),
+                    y: parseFloat(points[j]),
                     label: firstLinepoints[j]
 
                 });
             }
         }
         return dataPoints;
-
     }
 
 
-    $.get("data/prenom.csv", function(data) {
+    $.get("data/diplome2.csv", function(data) {
 
 
-        type = "column"
-        for (var t = 0; t < 7; t++) {
-            var nome = type + "_chartContainer" + t;
-            teste(data, t * 4, nome);
+        type = "bar"
+        for (var t = 0; t < 8; t++) {
+            var nome = "column" + "_chartContainer" + t;
+            teste(data, t * 7, nome);
         }
 
         type = "line";
-        for (var t = 0; t < 7; t++) {
+        for (var t = 0; t < 8; t++) {
             var nome = type + "_chartContainer" + t;
-            teste(data, t * 4, nome);
+            teste(data, t * 7, nome);
         }
 
         // type = "stackedBar";
@@ -166,28 +191,28 @@ window.onload = function() {
         // }
 
         type = "stackedColumn";
-        for (var t = 0; t < 7; t++) {
+        for (var t = 0; t < 8; t++) {
             var nome = type + "_chartContainer" + t;
-            teste(data, t * 4, nome);
+            teste(data, t * 7, nome);
         }
 
 
     });
 
 
-    $.get("data/enfant.csv", function(data) {
+    $.get("data/preoccupations.csv", function(data) {
 
 
         type = "column"
         for (var t = 0; t < 7; t++) {
             var nome = type + "_chart2Container" + t;
-            teste2(data, t * 5, nome);
+            teste2(data, t * 4, nome);
         }
 
         type = "line";
         for (var t = 0; t < 7; t++) {
             var nome = type + "_chart2Container" + t;
-            teste2(data, t * 5, nome);
+            teste2(data, t * 4, nome);
         }
 
         // type = "stackedBar";
@@ -199,7 +224,7 @@ window.onload = function() {
         type = "stackedColumn";
         for (var t = 0; t < 7; t++) {
             var nome = type + "_chart2Container" + t;
-            teste2(data, t * 5, nome);
+            teste2(data, t * 4, nome);
         }
 
 

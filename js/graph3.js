@@ -25,16 +25,20 @@ window.onload = function() {
             },
 
             axisX: {
-                //reversed : true,
+                reversed : true,
                 titleFontSize: 16,
-                title: "Evolution"
+                labelFontSize: 12,
+                labelAutoFit: true,
+                //  title: "Profession"
+              },
+            axisX2:{
+                title: "Diplôme"
             },
             axisY: {
                 // reversed : true,
                 titleFontSize: 16,
-                title: "Quantité"
+                title: "Quantité (%)"
             },
-
             data: [{
                     type: type,
                     showInLegend: true,
@@ -76,6 +80,7 @@ window.onload = function() {
                 labelAutoFit: true,  // change to false
                 title: "Profession"
             },
+
             axisY: {
                 // reversed : true,
                 titleFontSize: 16,
@@ -133,28 +138,27 @@ window.onload = function() {
 
                 dataPoints.push({
                 //    x: parseInt(firstLinepoints[j]),
-                    y: parseInt(points[j]),
+                    y: parseFloat(points[j]),
                     label: firstLinepoints[j]
 
                 });
             }
         }
         return dataPoints;
-
     }
 
 
-    $.get("data/prenom.csv", function(data) {
+    $.get("data/diplome.csv", function(data) {
 
 
-        type = "column"
-        for (var t = 0; t < 7; t++) {
-            var nome = type + "_chartContainer" + t;
+        type = "bar"
+        for (var t = 0; t < 8; t++) {
+            var nome = "column" + "_chartContainer" + t;
             teste(data, t * 4, nome);
         }
 
         type = "line";
-        for (var t = 0; t < 7; t++) {
+        for (var t = 0; t < 8; t++) {
             var nome = type + "_chartContainer" + t;
             teste(data, t * 4, nome);
         }
@@ -166,7 +170,7 @@ window.onload = function() {
         // }
 
         type = "stackedColumn";
-        for (var t = 0; t < 7; t++) {
+        for (var t = 0; t < 8; t++) {
             var nome = type + "_chartContainer" + t;
             teste(data, t * 4, nome);
         }
