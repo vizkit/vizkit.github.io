@@ -84,7 +84,7 @@ window.onload = function() {
             },
 
             legend:{
-              maxWidth: 300,
+              maxWidth: 250,
              },
             data: [{
                     type: type,
