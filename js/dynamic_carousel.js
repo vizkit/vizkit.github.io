@@ -107,27 +107,26 @@ alert("hola");
        pdf.addImage(logo, 'PNG', 2, 2, 590,850);*/
   
  
-          if(duration_longue && adult){
-            var logo = new Image();
-            logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
-            pdf.addImage(logo, 'PNG', 2, 2, 590,850);
-            pdf.addPage();
-
-           
-          
-          }else if(duration_longue && enfant) {
-            logo.src = "https://vizkit.github.io/pdf_images/long/Long_enfants/long_enfants_dataset1_1.PNG";
-            pdf.addImage(logo, 'PNG', 2, 2, 590,850);
-            pdf.addPage();
+          if(duration_longue){
+            if(adult){
+              var logo = new Image();
+              logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
+              pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+              pdf.addPage();
+            }else{
+              logo.src = "https://vizkit.github.io/pdf_images/long/Long_enfants/long_enfants_dataset1_1.PNG";
+              pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+              pdf.addPage();
 
 
-          }else if(duration_courte && enfant){
-            logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
-            pdf.addImage(logo, 'PNG', 2, 2, 590,850);
-            pdf.addPage();
+          }else{
+            if(enfant){
+                logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
+                pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+                pdf.addPage();
           
           
-          }else if(duration_courte && enfant){
+            }else {
           
             logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
