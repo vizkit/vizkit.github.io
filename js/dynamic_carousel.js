@@ -104,21 +104,22 @@ alert("hola");
           if(duration_longue){
             var logo = new Image();
             logo.src = "/pdf_images/1.png";
+            logo.onload=function(){
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
-            pdf.addPage();
-            var logo = new Image();
-            logo.src = "/pdf_images/1.png";
-            pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+            pdf.addPage();};
+     //       var logo = new Image();
+      //      logo.src = "/pdf_images/1.png";
+       //     pdf.addImage(logo, 'PNG', 2, 2, 590,850);
            
           
-          }else if(duration_courte) {
+          }/*else if(duration_courte) {
             logo.src = "/pdf_images/1.png";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
             pdf.addPage();
             logo.src = "/pdf_images/1.png";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
 
-          }
+          }*/
 
            var uno= 1;
 
