@@ -14,7 +14,7 @@
     var nbDePersonnes = 16;
     var sce = 1;
 
-    localStorage.duree = 'longue';
+//    localStorage.duree = 'longue';
 
 
   //on appuie les boutons en conséquence
