@@ -136,6 +136,11 @@ doc= new jsPDF();
 
 
   //      doc.output("dataurlnewwindow");
-  doc.save("helllo.pdf");
+
+  
+        var pdf =new jsPDF();
+        pdf.text(30,30,'Hello.pdf');
+                 
+      pdf.output("dataurlnewwindow");
 
         }
