@@ -92,7 +92,7 @@ function demoFromHTML() {
         
 
 
-  alert("hola")
+  alert("hola");
       //    pdf = new jsPDF('p', 'pt', 'a4', false);
        var pdf = new jsPDF();
           pdf.text("hello", 30,30);
