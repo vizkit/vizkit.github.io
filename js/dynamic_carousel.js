@@ -72,8 +72,8 @@
     var pub = "adu";
     var nbDePersonnes = 16;
     var sce = 1;
-    var duration_longue = true;
-    var duration_courte = false;
+    var duration_longue = 1;
+    var duration_courte = 0;
     var enfant = 0;
     var adult = 1;
   //on appuie les boutons en conséquence
