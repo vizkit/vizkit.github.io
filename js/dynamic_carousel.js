@@ -193,6 +193,7 @@ function demoFromHTML() {
               pdf.addPage();
             }else{
                  alert("enfant_LONGUE");
+              var logo = new Image();
               logo.src = "https://vizkit.github.io/pdf_images/long/Long_enfants/long_enfants_dataset1_1.PNG";
               pdf.addImage(logo, 'PNG', 2, 2, 590,850);
               pdf.addPage();
@@ -202,7 +203,8 @@ function demoFromHTML() {
             alert(localStorage.duree);
             if(localStorage.type == 'enfant'){
 
-                 alert("enfant_Court");
+                alert("enfant_Court");
+                var logo = new Image();
                 logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
                 pdf.addImage(logo, 'PNG', 2, 2, 590,850);
                 pdf.addPage();
@@ -210,6 +212,7 @@ function demoFromHTML() {
 
             }else {
               alert("adult_court");
+              var logo = new Image();
               logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
               pdf.addImage(logo, 'PNG', 2, 2, 590,850);
               pdf.addPage();
