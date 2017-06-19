@@ -135,6 +135,7 @@ doc= new jsPDF();
           };*/
 
 
-          doc.output("dataurlnewwindow");
+  //      doc.output("dataurlnewwindow");
+  doc.save("helllo.pdf");
 
         }
