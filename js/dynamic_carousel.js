@@ -97,7 +97,7 @@ function demoFromHTML() {
           logo.src = "1.png";
             doc.addImage(logo, 'JPEG', 2, 2, 590,850);
   
-  
+  /*
           if(duration_longue){
             var logo = new Image();
             logo.src = "../donnees/1.png";
@@ -123,7 +123,7 @@ function demoFromHTML() {
 
 
           var paso;
-        /* for (paso = 4; paso < 6; paso++) {
+        for (paso = 4; paso < 6; paso++) {
             doc.addPage();
             var logo = new Image();
             logo.src = paso+".png";
