@@ -155,7 +155,7 @@ function demoFromHTML() {
       }
     });
           
-    $("#buttonemail").click(function(e){
+  /*  $("#buttonemail").click(function(e){
             
      var pdf = new jsPDF('p', 'pt', 'a4', false);
      
@@ -211,11 +211,11 @@ function demoFromHTML() {
 
   
                  
-     pdf.output("dataurlnewwindow");  
+   //  pdf.output("dataurlnewwindow");  
               
               
               
-     });
+     // });*/
           
 
   });
