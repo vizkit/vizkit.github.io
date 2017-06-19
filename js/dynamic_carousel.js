@@ -89,7 +89,7 @@ var duration_courte = false;
 
 
 function demoFromHTML() {
-        
+        alert("hola");
 
 
           doc = new jsPDF('p', 'pt', 'a4', false);      
