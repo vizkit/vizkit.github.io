@@ -155,12 +155,13 @@ function demoFromHTML() {
       }
     });
           
-  /*  $("#buttonemail").click(function(e){
+   $("#buttonemail").click(function(e){
             
      var pdf = new jsPDF('p', 'pt', 'a4', false);
      
-  alert("hoaaaa");
+  alert("longue");
   alert(duration_longue);
+alert(duration_longue);
  
           if(duration_longue){
             
@@ -211,11 +212,11 @@ function demoFromHTML() {
 
   
                  
-   //  pdf.output("dataurlnewwindow");  
+     pdf.output("dataurlnewwindow");  
               
               
               
-     // });*/
+      });
           
 
   });
