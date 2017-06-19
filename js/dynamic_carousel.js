@@ -101,8 +101,6 @@ function demoFromHTML() {
       //$("#car").empty();
       $("#car").load('carousel_court.html');
       $("#p1").show();
-            alert(duration_longue);
-            alert(duration_courte);
       alert("Chargement terminé \n Guide pour atelier court !");
       $("#rest").hide();
       $("#plusbtn, #minubtn").click(function(){$("#rest").show();});
@@ -159,10 +157,9 @@ function demoFromHTML() {
    $("#buttonemail").click(function(e){
             
      var pdf = new jsPDF('p', 'pt', 'a4', false);
-     
-  alert("longue");
+
   alert(duration_longue);
-alert(duration_longue);
+alert(duration_courte);
  
           if(duration_longue){
             
