@@ -123,14 +123,14 @@ function demoFromHTML() {
 
 
           var paso;
-         for (paso = 4; paso < 6; paso++) {
+        /* for (paso = 4; paso < 6; paso++) {
             doc.addPage();
             var logo = new Image();
             logo.src = paso+".png";
             doc.addImage(logo, 'JPEG', 2, 2, 590,850);
           // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
         
-          };
+          };*/
 
 
           doc.output("dataurlnewwindow");
