@@ -93,7 +93,7 @@ function demoFromHTML() {
 
 
 
-         pdf = new jsPDF('p', 'pt', 'a4', false);
+      var pdf = new jsPDF('p', 'pt', 'a4', false);
  //    var pdf = new jsPDF();
    //       pdf.text("hello", 30,30);
         logo.src = "1.png";
