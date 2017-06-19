@@ -24,9 +24,12 @@
     $("#sce_1").addClass("active");
     //$("#car").load('carousel_long.html');
 
+   
     //On remplit le champ du bouton +/- avec la valeur par défaut
     $("#inputnb").val(nbDePersonnes);
 
+   
+   localStorage.duree = 'longue_adult';
     //var carousel_c = $.get("carousel_court.html");
     //var carousel_l = $.get("carousel_long.html");
   //On change la valeur des variables en fonction des actions utilisateurs
