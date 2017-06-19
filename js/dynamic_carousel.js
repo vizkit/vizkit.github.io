@@ -1,7 +1,4 @@
-var duration_longue = true;
-var duration_courte = false;
-var enfant = false;
-var adult = true;
+
 
 
 /*function demoFromHTML() {
@@ -75,6 +72,10 @@ var adult = true;
     var pub = "adu";
     var nbDePersonnes = 16;
     var sce = 1;
+    var duration_longue = true;
+    var duration_courte = false;
+    var enfant = false;
+    var adult = true;
   //on appuie les boutons en conséquence
     $("#dur_lon").addClass("active");
     $("#pub_adu").addClass("active");
