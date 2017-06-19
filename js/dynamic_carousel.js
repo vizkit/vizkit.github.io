@@ -175,7 +175,7 @@ function demoFromHTML() {
 
      var pdf = new jsPDF('p', 'pt', 'a4', false);
 
-  alert(duration_longue);
+     alert(localStorage.duree);
 
           if(duration_longue){
 
