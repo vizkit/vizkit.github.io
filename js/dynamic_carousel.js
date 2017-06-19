@@ -95,12 +95,12 @@ alert("hola");
 
      var pdf = new jsPDF('p', 'pt', 'a4', false);
      //var pdf = new jsPDF();
-  var logo = new Image();
+  /*var logo = new Image();
          pdf.text("hello", 30,30);
        logo.src = "1.png";
-       pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+       pdf.addImage(logo, 'PNG', 2, 2, 590,850);*/
   
- /*
+ 
           if(duration_longue){
             var logo = new Image();
             logo.src = "../donnees/1.png";
@@ -133,7 +133,7 @@ alert("hola");
             pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
           // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
         
-          };*/
+          };
 
 
   
