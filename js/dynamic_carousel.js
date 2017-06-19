@@ -163,7 +163,7 @@
          pdf.text("hello", 30,30);
        logo.src = "1.png";
        pdf.addImage(logo, 'PNG', 2, 2, 590,850);*/
-               alert("holaaedfadggaaaa");
+  alert("holaaedfadggaaaa");
   alert(duration_longue);
  
           if(duration_longue == "1"){
