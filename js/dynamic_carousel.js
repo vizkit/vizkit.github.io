@@ -29,6 +29,7 @@ var adult = true;
       duree = "courte";
       duration_courte = true;
       duration_longue = false;
+      alert(duration_courte);
       $("#dur_lon").removeClass("active");
       $("#dur_cou").addClass("active");
       //var code = load("carousel_court.html");
