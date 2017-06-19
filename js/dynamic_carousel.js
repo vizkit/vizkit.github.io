@@ -89,32 +89,32 @@ var duration_courte = false;
 
 
 function demoFromHTML() {
-        alert("hola");
+        
 
 
-   /*
-          doc = new jsPDF('p', 'pt', 'a4', false);      
+  
+          pdf = new jsPDF('p', 'pt', 'a4', false);      
           
           logo.src = "1.png";
-            doc.addImage(logo, 'JPEG', 2, 2, 590,850);
+            pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
   
  
           if(duration_longue){
             var logo = new Image();
             logo.src = "../donnees/1.png";
-            doc.addImage(logo, 'JPEG', 2, 2, 590,850);
-            doc.addPage();
+            pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
+            pdf.addPage();
             var logo = new Image();
             logo.src = "2.png";
-            doc.addImage(logo, 'JPEG', 2, 2, 590,850);
+            pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
            
           
           }else if(duration_courte) {
             logo.src = "../donnees/2.png";
-            doc.addImage(logo, 'JPEG', 2, 2, 590,850);
-            doc.addPage();
+            pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
+            pdf.addPage();
             logo.src = "3.png";
-            doc.addImage(logo, 'JPEG', 2, 2, 590,850);
+            pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
 
           }
 
@@ -125,20 +125,16 @@ function demoFromHTML() {
 
           var paso;
         for (paso = 4; paso < 6; paso++) {
-            doc.addPage();
+            pdf.addPage();
             var logo = new Image();
             logo.src = paso+".png";
-            doc.addImage(logo, 'JPEG', 2, 2, 590,850);
+            pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
           // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
         
           };*/
 
 
-  //      doc.output("dataurlnewwindow");
-
   
-        var pdf = new jsPDF();
-        pdf.text(30,30,'Hello.pdf');
                  
       pdf.output("dataurlnewwindow");
 
