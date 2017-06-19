@@ -103,7 +103,7 @@ alert("hola");
  
           if(duration_longue){
             var logo = new Image();
-            logo.src = "../donnees/1.png";
+            logo.src = "donnees/1.png";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
             pdf.addPage();
             var logo = new Image();
@@ -112,7 +112,7 @@ alert("hola");
            
           
           }else if(duration_courte) {
-            logo.src = "../donnees/2.png";
+            logo.src = "donnees/2.png";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
             pdf.addPage();
             logo.src = "3.png";
