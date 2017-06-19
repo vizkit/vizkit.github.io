@@ -32,8 +32,7 @@
   //Pour la durée :
     $("#dur_cou").click(function(e){
 
-      localStorage.duree = 'courte';
-
+  //    localStorage.duree = 'courte';
 
       duree = "courte";
       duration_courte = true;
@@ -49,6 +48,12 @@
       alert("Chargement terminé \n Guide pour atelier court !");
       $("#rest").hide();
       $("#plusbtn, #minubtn").click(function(){$("#rest").show();});
+
+      if (duree == "courte" && enfant) localStorage.duree = "courte_enfant";
+      else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
+      else if (duree == "longue" && adult) localStorage.duree = "longue_adult";
+      else  localStorage.duree = "longue_enfant";
+
     });
     $("#dur_lon").click(function(e){
 
@@ -66,6 +71,11 @@
       alert("Chargement terminé \n Guide pour atelier long !");
       $("#rest").hide();
       $("#plusbtn, #minubtn").click(function(){$("#rest").show();})
+
+      if (duree == "courte" && enfant) localStorage.duree = "courte_enfant";
+      else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
+      else if (duree == "longue" && adult) localStorage.duree = "longue_adult";
+      else  localStorage.duree = "longue_enfant";
     });
   //Pour le public :
     $("#pub_enf").click(function(e){
@@ -77,6 +87,11 @@
       enfant = true;
       $("#pub_adu").removeClass("active");
       $("#pub_enf").addClass("active");
+
+      if (duree == "courte" && enfant) localStorage.duree = "courte_enfant";
+      else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
+      else if (duree == "longue" && adult) localStorage.duree = "longue_adult";
+      else  localStorage.duree = "longue_enfant";
     });
     $("#pub_adu").click(function(e){
 
@@ -87,6 +102,11 @@
       enfant = false;
       $("#pub_enf").removeClass("active");
       $("#pub_adu").addClass("active");
+
+      if (duree == "courte" && enfant) localStorage.duree = "courte_enfant";
+      else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
+      else if (duree == "longue" && adult) localStorage.duree = "longue_adult";
+      else  localStorage.duree = "longue_enfant";
     });
   //Pour le scénario :
     $("#sce_2").click(function(e){
@@ -183,41 +203,43 @@ function demoFromHTML() {
 
   //   alert(localStorage.duree);
 
-          if(localStorage.duree == 'longue'){
+    var logo = new Image();
 
-            if(localStorage.type == 'adult'){
-              alert("adulto " + localStorage.duree);
-              var logo = new Image();
+          if(localStorage.duree == 'longue_adult'){
+
+    //        if(adult){
+      //        alert("adulto " + localStorage.duree);
               logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
               pdf.addImage(logo, 'PNG', 2, 2, 590,850);
               pdf.addPage();
-            }else{
+            }
+            else if(localStorage.duree == 'longue_enfant'){
+      //      }else{
                  alert("enfant_LONGUE");
-              var logo = new Image();
               logo.src = "https://vizkit.github.io/pdf_images/long/Long_enfants/long_enfants_dataset1_1.PNG";
               pdf.addImage(logo, 'PNG', 2, 2, 590,850);
               pdf.addPage();
-            }
+        //    }
 
-          }else{
+      }
+      else if(localStorage.duree == 'courte_enfant'){
+
             alert(localStorage.duree);
-            if(localStorage.type == 'enfant'){
+        //    if(enfant){
 
-                alert("enfant_Court");
-                var logo = new Image();
+                 alert("enfant_Court");
                 logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
                 pdf.addImage(logo, 'PNG', 2, 2, 590,850);
                 pdf.addPage();
 
-
-            }else {
+          }
+          else {
               alert("adult_court");
-              var logo = new Image();
               logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
               pdf.addImage(logo, 'PNG', 2, 2, 590,850);
               pdf.addPage();
 
-            }
+        //    }
 
            var uno= 1;
           }
