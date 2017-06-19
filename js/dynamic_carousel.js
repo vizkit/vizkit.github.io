@@ -130,7 +130,7 @@ alert("hola");
             pdf.addPage();
             var logo = new Image();
             logo.src = paso+".png";
-            pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
+            pdf.addImage(logo, 'PNG', 2, 2, 590,850);
           // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
         
           };
