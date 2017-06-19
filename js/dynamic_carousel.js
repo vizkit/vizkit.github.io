@@ -1,13 +1,13 @@
-
+var duration_longue = true;
+var duration_courte = false;
+var enfant = false;
+var adult = true;
 
 
 
   $(document).ready(function(){
   //on initialise les variables avec les valeurs par défaut
-    var duration_longue = true;
-    var duration_courte = false;
-    var enfant = false;
-    var adult = true;
+    
     var duree = "longue";
     var pub = "adu";
     var nbDePersonnes = 16;
