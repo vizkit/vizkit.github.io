@@ -91,8 +91,7 @@ var duration_courte = false;
 function demoFromHTML() {
         alert("hola");
 
-doc= new jsPDF();
-  doc.text(30,30,'Helloworld');
+
    /*
           doc = new jsPDF('p', 'pt', 'a4', false);      
           
@@ -138,7 +137,7 @@ doc= new jsPDF();
   //      doc.output("dataurlnewwindow");
 
   
-        var pdf =new jsPDF();
+        var pdf = new jsPDF();
         pdf.text(30,30,'Hello.pdf');
                  
       pdf.output("dataurlnewwindow");
