@@ -61,10 +61,7 @@ function demoFromHTML() {
      pdf.output("dataurlnewwindow");
 
         }*/
-    var duration_longue = true;
-    var duration_courte = false;
-    var enfant = false;
-    var adult = true;
+
 
 
   $(document).ready(function(){
@@ -74,6 +71,10 @@ function demoFromHTML() {
     var pub = "adu";
     var nbDePersonnes = 16;
     var sce = 1;
+    duration_longue = true;
+    duration_courte = false;
+    enfant = false;
+    adult = true;
 
   //on appuie les boutons en conséquence
     $("#dur_lon").addClass("active");
