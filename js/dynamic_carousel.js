@@ -84,3 +84,52 @@ var duration_courte = false;
     });
 
   });
+
+
+
+
+function demoFromHTML() {
+        
+
+
+          doc = new jsPDF('p', 'pt', 'a4', false);      
+          
+          
+          if(duration_longue){
+            var logo = new Image();
+            logo.src = "../donnes/1.png";
+            doc.addImage(logo, 'JPEG', 2, 2, 590,850);
+            doc.addPage();
+            var logo = new Image();
+            logo.src = "2.png";
+            doc.addImage(logo, 'JPEG', 2, 2, 590,850);
+           
+          
+          }else if(duration_courte) {
+            logo.src = "../donnes/2.png";
+            doc.addImage(logo, 'JPEG', 2, 2, 590,850);
+            doc.addPage();
+            logo.src = "3.png";
+            doc.addImage(logo, 'JPEG', 2, 2, 590,850);
+
+          }
+
+           var uno= 1;
+
+
+
+
+          var paso;
+         for (paso = 4; paso < 6; paso++) {
+            doc.addPage();
+            var logo = new Image();
+            logo.src = paso+".png";
+            doc.addImage(logo, 'JPEG', 2, 2, 590,850);
+          // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
+        
+          };
+
+
+          doc.output("dataurlnewwindow");
+
+        }
