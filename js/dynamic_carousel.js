@@ -52,7 +52,7 @@
 
       if (duree == "longue" && enfant) localStorage.duree = "longue_enfant";
       else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
-      else if (duree == "longue" && adult) localStorage.duree = "longue_adult";
+      else if (duree == "courte" && enfant) localStorage.duree = "courte_enfant";
       else  localStorage.duree = "longue_adult";
 
     });
@@ -75,7 +75,7 @@
 
       if (duree == "longue" && enfant) localStorage.duree = "longue_enfant";
       else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
-      else if (duree == "longue" && adult) localStorage.duree = "longue_adult";
+      else if (duree == "courte" && enfant) localStorage.duree = "courte_enfant";
       else  localStorage.duree = "longue_adult";
     });
   //Pour le public :
@@ -91,7 +91,7 @@
 
       if (duree == "longue" && enfant) localStorage.duree = "longue_enfant";
       else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
-      else if (duree == "longue" && adult) localStorage.duree = "longue_adult";
+      else if (duree == "courte" && enfant) localStorage.duree = "courte_enfant";
       else  localStorage.duree = "longue_adult";
     });
     $("#pub_adu").click(function(e){
@@ -106,7 +106,7 @@
 
       if (duree == "longue" && enfant) localStorage.duree = "longue_enfant";
       else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
-      else if (duree == "longue" && adult) localStorage.duree = "longue_adult";
+      else if (duree == "courte" && enfant) localStorage.duree = "courte_enfant";
       else  localStorage.duree = "longue_adult";
     });
   //Pour le scénario :
@@ -206,7 +206,7 @@ function demoFromHTML() {
 
     var logo = new Image();
 
-    alert(localStorage.duree);
+  //  alert(localStorage.duree);
 
           if(localStorage.duree == "longue_adult"){
 
