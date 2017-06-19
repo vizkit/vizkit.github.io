@@ -72,7 +72,7 @@
       //$("#car").empty();
       $("#car").load('carousel_long.html');
       $("#p1").show();
-      alert("Chargement terminé \n Guide pour atelier long !");
+//       alert("Chargement terminé \n Guide pour atelier long !");
       $("#rest").hide();
       $("#plusbtn, #minubtn").click(function(){$("#rest").show();})
 
