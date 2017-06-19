@@ -61,10 +61,10 @@ function demoFromHTML() {
      pdf.output("dataurlnewwindow");
 
         }*/
- duration_longue = true;
-    duration_courte = false;
-    enfant = false;
-    adult = true;
+ var duration_longue = true;
+  var  duration_courte = false;
+  var  enfant = false;
+   var adult = true;
 
   $(document).ready(function(){
   //on initialise les variables avec les valeurs par défaut
