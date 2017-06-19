@@ -131,7 +131,7 @@ function demoFromHTML() {
             pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
           // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
         
-          };*/
+          };
 
 
   
