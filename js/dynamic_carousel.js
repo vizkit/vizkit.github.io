@@ -1,70 +1,10 @@
-/*
-
-function demoFromHTML() {
-        
 
 
 
-     var pdf = new jsPDF('p', 'pt', 'a4', false);
-  
-  alert(duration_longue);
- 
-          if(duration_longue){
-            
-            if(adult){
-              alert("adult_long");
-              var logo = new Image();
-              logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
-              pdf.addImage(logo, 'PNG', 2, 2, 590,850);
-              pdf.addPage();
-            }else{
-                 alert("enfant_LONGUE");
-              logo.src = "https://vizkit.github.io/pdf_images/long/Long_enfants/long_enfants_dataset1_1.PNG";
-              pdf.addImage(logo, 'PNG', 2, 2, 590,850);
-              pdf.addPage();
-            }
-
-          }else{
-            if(enfant){
-                 alert("enfant_Court");
-                logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
-                pdf.addImage(logo, 'PNG', 2, 2, 590,850);
-                pdf.addPage();
-          
-          
-            }else {
-              alert("adult_court");
-              logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
-              pdf.addImage(logo, 'PNG', 2, 2, 590,850);
-              pdf.addPage();
-          
-            }
-
-           var uno= 1;
-          }
-
-
-
-       /*   var paso;
-        for (paso = 4; paso < 6; paso++) {
-            pdf.addPage();
-            var logo = new Image();
-            logo.src = paso+".png";
-            pdf.addImage(logo, 'PNG', 2, 2, 590,850);
-          // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
-        
-          };
-
-
-  
-                 
-     pdf.output("dataurlnewwindow");
-
-        }*/
- var duration_longue;
-  var  duration_courte;
-  var  enfant;
-   var adult;
+ var duration_longue = true;
+  var  duration_courte = false;
+  var  enfant = false;
+   var adult = true;
 
   $(document).ready(function(){
   //on initialise les variables avec les valeurs par défaut
@@ -73,10 +13,6 @@ function demoFromHTML() {
     var pub = "adu";
     var nbDePersonnes = 16;
     var sce = 1;
-    duration_longue = true;
-    duration_courte = false;
-    enfant = false;
-    adult = true;
 
 
   //on appuie les boutons en conséquence
@@ -157,12 +93,80 @@ function demoFromHTML() {
       }
     });
           
-   $("#buttonemail").click(function(e){
+ /*  $("#buttonemail").click(function(e){
             
      var pdf = new jsPDF('p', 'pt', 'a4', false);
 
            alert("courte");
 alert(duration_courte);
+ 
+          if(duration_longue){
+            
+            if(adult){
+              alert("adult_long");
+              var logo = new Image();
+              logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
+              pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+              pdf.addPage();
+            }else{
+                 alert("enfant_LONGUE");
+              logo.src = "https://vizkit.github.io/pdf_images/long/Long_enfants/long_enfants_dataset1_1.PNG";
+              pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+              pdf.addPage();
+            }
+
+          }else{
+            if(enfant){
+                 alert("enfant_Court");
+                logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
+                pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+                pdf.addPage();
+          
+          
+            }else {
+              alert("adult_court");
+              logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
+              pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+              pdf.addPage();
+          
+            }
+
+           var uno= 1;
+          }
+
+*/
+
+       /*   var paso;
+        for (paso = 4; paso < 6; paso++) {
+            pdf.addPage();
+            var logo = new Image();
+            logo.src = paso+".png";
+            pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+          // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
+        
+          };*/
+
+
+  
+                 
+   //  pdf.output("dataurlnewwindow");  
+              
+              
+              
+    //  });*/
+          
+
+  });
+
+
+function demoFromHTML() {
+        
+
+
+
+     var pdf = new jsPDF('p', 'pt', 'a4', false);
+  
+  alert(duration_longue);
  
           if(duration_longue){
             
@@ -213,13 +217,6 @@ alert(duration_courte);
 
   
                  
-     pdf.output("dataurlnewwindow");  
-              
-              
-              
-      });
-          
+     pdf.output("dataurlnewwindow");
 
-  });
-
-
+        }
