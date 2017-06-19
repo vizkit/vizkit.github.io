@@ -108,12 +108,15 @@ alert("hola");
   
  
           if(duration_longue){
+            
             if(adult){
+              alert("adult");
               var logo = new Image();
               logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
               pdf.addImage(logo, 'PNG', 2, 2, 590,850);
               pdf.addPage();
             }else{
+                 alert("enfant");
               logo.src = "https://vizkit.github.io/pdf_images/long/Long_enfants/long_enfants_dataset1_1.PNG";
               pdf.addImage(logo, 'PNG', 2, 2, 590,850);
               pdf.addPage();
@@ -121,13 +124,14 @@ alert("hola");
 
           }else{
             if(enfant){
+                 alert("enfant");
                 logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
                 pdf.addImage(logo, 'PNG', 2, 2, 590,850);
                 pdf.addPage();
           
           
             }else {
-          
+              alert("adult");
             logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
             pdf.addPage();
