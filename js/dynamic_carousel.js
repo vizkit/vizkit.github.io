@@ -103,7 +103,7 @@ alert("hola");
  
           if(duration_longue){
             var logo = new Image();
-            logo.src = "https://vizkit.github.io/donnees/4jpeg";
+            logo.src = "https://vizkit.github.io/donnees/4.jpeg";
             pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
             pdf.addPage();
      //       var logo = new Image();
