@@ -49,7 +49,7 @@
       //$("#car").empty();
       $("#car").load('carousel_court.html');
       $("#p1").show();
-      alert("Chargement terminé \n Guide pour atelier court !");
+//       alert("Chargement terminé \n Guide pour atelier court !");
       $("#rest").hide();
       $("#plusbtn, #minubtn").click(function(){$("#rest").show();});
 
@@ -219,7 +219,7 @@ function demoFromHTML() {
               pdf.addImage(logo, 'PNG', 2, 2, 590,850);
               pdf.addPage();
             }
-            else if(localStorage.duree == 'longue_enfant'){
+            else if(localStorage.duree == "longue_enfant"){
       //      }else{
             //     alert("enfant_LONGUE");
               logo.src = "https://vizkit.github.io/pdf_images/long/Long_enfants/long_enfants_dataset1_1.PNG";
@@ -228,7 +228,7 @@ function demoFromHTML() {
         //    }
 
       }
-      else if(localStorage.duree == 'courte_enfant'){
+      else if(localStorage.duree == "courte_enfant"){
 
         //    if(enfant){
 
