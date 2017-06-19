@@ -74,8 +74,8 @@
     var sce = 1;
     var duration_longue = true;
     var duration_courte = false;
-    var enfant = false;
-    var adult = true;
+    var enfant = 0;
+    var adult = 1;
   //on appuie les boutons en conséquence
     $("#dur_lon").addClass("active");
     $("#pub_adu").addClass("active");
@@ -91,8 +91,8 @@
   //Pour la durée :
     $("#dur_cou").click(function(e){
       duree = "courte";
-      duration_courte = true;
-      duration_longue = false;
+      duration_courte = 1;
+      duration_longue = 0;
       $("#dur_lon").removeClass("active");
       $("#dur_cou").addClass("active");
       //var code = load("carousel_court.html");
@@ -107,8 +107,8 @@
     });
     $("#dur_lon").click(function(e){
       duree = "longue";
-      duration_longue = true;
-      duration_courte =false;
+      duration_longue = 1;
+      duration_courte =0;
       $("#dur_cou").removeClass("active");
       $("#dur_lon").addClass("active");
       //$("#myCarousel").replaceWith(carousel_l);
@@ -122,15 +122,15 @@
   //Pour le public :
     $("#pub_enf").click(function(e){
       pub = "enf";
-      adult = false;
-      enfant = true;
+      adult = 0;
+      enfant = 1;
       $("#pub_adu").removeClass("active");
       $("#pub_enf").addClass("active");
     });
     $("#pub_adu").click(function(e){
       pub = "adu";
-      adult = true;
-      enfant = false;
+      adult = 1;
+      enfant = 0;
       $("#pub_enf").removeClass("active");
       $("#pub_adu").addClass("active");
     });
@@ -165,9 +165,9 @@
                alert("hol");
   alert(duration_longue);
  
-          if(duration_longue){
+          if(duration_longue == "1"){
             
-            if(adult){
+            if(adult== "1"){
               alert("adult_long");
               var logo = new Image();
               logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
@@ -181,7 +181,7 @@
             }
 
           }else{
-            if(enfant){
+            if(enfant== "1"){
                  alert("enfant_Court");
                 logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
                 pdf.addImage(logo, 'PNG', 2, 2, 590,850);
