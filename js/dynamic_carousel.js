@@ -101,6 +101,7 @@
       //$("#car").empty();
       $("#car").load('carousel_court.html');
       $("#p1").show();
+            alert(duration_courte);
       alert("Chargement terminé \n Guide pour atelier court !");
       $("#rest").hide();
       $("#plusbtn, #minubtn").click(function(){$("#rest").show();});
