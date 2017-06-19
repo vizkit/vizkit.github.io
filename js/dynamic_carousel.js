@@ -91,13 +91,15 @@ var duration_courte = false;
 function demoFromHTML() {
         alert("hola");
 
-
+doc= new jsPDF();
+  doc.text(30,30,'Helloworld');
+   /*
           doc = new jsPDF('p', 'pt', 'a4', false);      
           
           logo.src = "1.png";
             doc.addImage(logo, 'JPEG', 2, 2, 590,850);
   
-  /*
+ 
           if(duration_longue){
             var logo = new Image();
             logo.src = "../donnees/1.png";
