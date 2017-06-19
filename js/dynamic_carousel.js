@@ -100,6 +100,7 @@ function demoFromHTML() {
       //$("#car").empty();
       $("#car").load('carousel_court.html');
       $("#p1").show();
+            alert(duration_longue);
             alert(duration_courte);
       alert("Chargement terminé \n Guide pour atelier court !");
       $("#rest").hide();
@@ -108,7 +109,7 @@ function demoFromHTML() {
     $("#dur_lon").click(function(e){
       duree = "longue";
       duration_longue = 1;
-      duration_courte =0;
+      duration_courte = 0;
       $("#dur_cou").removeClass("active");
       $("#dur_lon").addClass("active");
       //$("#myCarousel").replaceWith(carousel_l);
