@@ -92,12 +92,12 @@ function demoFromHTML() {
         
 
 
-  alert("hola");
-      //    pdf = new jsPDF('p', 'pt', 'a4', false);
- //      var pdf = new jsPDF();
+
+         pdf = new jsPDF('p', 'pt', 'a4', false);
+ //    var pdf = new jsPDF();
    //       pdf.text("hello", 30,30);
-       //  logo.src = "1.png";
-        //    pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
+        logo.src = "1.png";
+           pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
   
  /*
           if(duration_longue){
@@ -137,6 +137,6 @@ function demoFromHTML() {
 
   
                  
-  //    pdf.output("dataurlnewwindow");
+     pdf.output("dataurlnewwindow");
 
         }
