@@ -98,7 +98,7 @@ var adult = true;
 
 function demoFromHTML() {
         
-alert("hola");
+
 
 
      var pdf = new jsPDF('p', 'pt', 'a4', false);
@@ -107,7 +107,7 @@ alert("hola");
          pdf.text("hello", 30,30);
        logo.src = "1.png";
        pdf.addImage(logo, 'PNG', 2, 2, 590,850);*/
-  
+  alert("duration" + duration_longue);
  
           if(duration_longue){
             
