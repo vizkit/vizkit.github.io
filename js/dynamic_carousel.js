@@ -1,6 +1,8 @@
 var duree = "longue";
 var duration_longue = true;
 var duration_courte = false;
+var enfant = false;
+var adult = true;
 
 
   $(document).ready(function(){
@@ -55,11 +57,15 @@ var duration_courte = false;
   //Pour le public :
     $("#pub_enf").click(function(e){
       pub = "enf";
+      adult = false;
+      enfant = true;
       $("#pub_adu").removeClass("active");
       $("#pub_enf").addClass("active");
     });
     $("#pub_adu").click(function(e){
       pub = "adu";
+      adult = true;
+      enfant = flase;
       $("#pub_enf").removeClass("active");
       $("#pub_adu").addClass("active");
     });
@@ -101,24 +107,40 @@ alert("hola");
        pdf.addImage(logo, 'PNG', 2, 2, 590,850);*/
   
  
-          if(duration_longue){
+          if(duration_longue && adult){
             var logo = new Image();
-            logo.src = "https://vizkit.github.io/pdf_images/Court_adults/2.jpeg";
-            pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
+            logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
+            pdf.addImage(logo, 'PNG', 2, 2, 590,850);
             pdf.addPage();
      //       var logo = new Image();
       //      logo.src = "/pdf_images/1.png";
        //     pdf.addImage(logo, 'PNG', 2, 2, 590,850);
            
           
-          }/*else if(duration_courte) {
-            logo.src = "/pdf_images/1.png";
+          }else if(duration_longue && enfant) {
+            logo.src = "https://vizkit.github.io/pdf_images/long/Long_enfants/long_enfants_dataset1_1.PNG";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
             pdf.addPage();
             logo.src = "/pdf_images/1.png";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
 
-          }*/
+          }else if(duration_courte && enfant){
+            logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
+            pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+            pdf.addPage();
+            logo.src = "/pdf_images/1.png";
+            pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+          
+          
+          }else if(duration_courte && enfant){
+          
+            logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
+            pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+            pdf.addPage();
+            logo.src = "/pdf_images/1.png";
+            pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+          
+          }
 
            var uno= 1;
 
