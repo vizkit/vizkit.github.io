@@ -94,7 +94,7 @@ function demoFromHTML() {
 
   
       //    pdf = new jsPDF('p', 'pt', 'a4', false);
-          pdf = new jsPDF();
+       var   pdf = new jsPDF();
           pdf.text("hello", 30,30);
        //  logo.src = "1.png";
         //    pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
