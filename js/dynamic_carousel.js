@@ -156,6 +156,72 @@ function demoFromHTML() {
         $("#pointLien").attr('href','graphiques_adultes.html');
       }
     });
+          
+      $("#telecharger").click(function(e){
+            
+     var pdf = new jsPDF('p', 'pt', 'a4', false);
+     //var pdf = new jsPDF();
+  /*var logo = new Image();
+         pdf.text("hello", 30,30);
+       logo.src = "1.png";
+       pdf.addImage(logo, 'PNG', 2, 2, 590,850);*/
+  alert(duration_longue);
+ 
+          if(duration_longue){
+            
+            if(adult){
+              alert("adult_long");
+              var logo = new Image();
+              logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
+              pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+              pdf.addPage();
+            }else{
+                 alert("enfant_LONGUE");
+              logo.src = "https://vizkit.github.io/pdf_images/long/Long_enfants/long_enfants_dataset1_1.PNG";
+              pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+              pdf.addPage();
+            }
+
+          }else{
+            if(enfant){
+                 alert("enfant_Court");
+                logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
+                pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+                pdf.addPage();
+          
+          
+            }else {
+              alert("adult_court");
+              logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
+              pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+              pdf.addPage();
+          
+            }
+
+           var uno= 1;
+          }
+
+
+
+       /*   var paso;
+        for (paso = 4; paso < 6; paso++) {
+            pdf.addPage();
+            var logo = new Image();
+            logo.src = paso+".png";
+            pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+          // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
+        
+          };*/
+
+
+  
+                 
+     pdf.output("dataurlnewwindow");  
+              
+              
+              
+      });
+          
 
   });
 
