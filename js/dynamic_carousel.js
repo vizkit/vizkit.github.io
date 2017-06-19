@@ -5,16 +5,17 @@
   var  duration_courte = false;
   var  enfant = false;
    var adult = true;
+   var duree = "longue";
+
 
   $(document).ready(function(){
   //on initialise les variables avec les valeurs par défaut
 
-    var duree = "longue";
     var pub = "adu";
     var nbDePersonnes = 16;
     var sce = 1;
 
-//    localStorage.duree = 'longue';
+  //  localStorage.duree = 'longue_adult';
 
 
   //on appuie les boutons en conséquence
@@ -49,10 +50,10 @@
       $("#rest").hide();
       $("#plusbtn, #minubtn").click(function(){$("#rest").show();});
 
-      if (duree == "courte" && enfant) localStorage.duree = "courte_enfant";
+      if (duree == "longue" && enfant) localStorage.duree = "longue_enfant";
       else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
       else if (duree == "longue" && adult) localStorage.duree = "longue_adult";
-      else  localStorage.duree = "longue_enfant";
+      else  localStorage.duree = "longue_adult";
 
     });
     $("#dur_lon").click(function(e){
@@ -72,10 +73,10 @@
       $("#rest").hide();
       $("#plusbtn, #minubtn").click(function(){$("#rest").show();})
 
-      if (duree == "courte" && enfant) localStorage.duree = "courte_enfant";
+      if (duree == "longue" && enfant) localStorage.duree = "longue_enfant";
       else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
       else if (duree == "longue" && adult) localStorage.duree = "longue_adult";
-      else  localStorage.duree = "longue_enfant";
+      else  localStorage.duree = "longue_adult";
     });
   //Pour le public :
     $("#pub_enf").click(function(e){
@@ -88,10 +89,10 @@
       $("#pub_adu").removeClass("active");
       $("#pub_enf").addClass("active");
 
-      if (duree == "courte" && enfant) localStorage.duree = "courte_enfant";
+      if (duree == "longue" && enfant) localStorage.duree = "longue_enfant";
       else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
       else if (duree == "longue" && adult) localStorage.duree = "longue_adult";
-      else  localStorage.duree = "longue_enfant";
+      else  localStorage.duree = "longue_adult";
     });
     $("#pub_adu").click(function(e){
 
@@ -103,10 +104,10 @@
       $("#pub_enf").removeClass("active");
       $("#pub_adu").addClass("active");
 
-      if (duree == "courte" && enfant) localStorage.duree = "courte_enfant";
+      if (duree == "longue" && enfant) localStorage.duree = "longue_enfant";
       else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
       else if (duree == "longue" && adult) localStorage.duree = "longue_adult";
-      else  localStorage.duree = "longue_enfant";
+      else  localStorage.duree = "longue_adult";
     });
   //Pour le scénario :
     $("#sce_2").click(function(e){
