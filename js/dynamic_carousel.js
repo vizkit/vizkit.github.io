@@ -103,7 +103,7 @@ alert("hola");
  
           if(duration_longue){
             var logo = new Image();
-            logo.src = "https://vizkit.github.io/pdf_images/4.jpeg";
+            logo.src = "https://vizkit.github.io/pdf_images/Court_adults/court_adults_dataset1_1.jpeg";
             logo.onload = function(){
             pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
             }
