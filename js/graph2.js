@@ -105,14 +105,14 @@ window.onload = function() {
           //      labelMaxWidth: 40,
                 labelFontSize: 12,
                 labelAutoFit: true,  // change to false
-                title: "Profession"
+                title: "Préoccupation"
             },
 
             axisY: {
                 // reversed : true,
                 titleFontSize: 16,
                 labelAutoFit: true,  // change to false
-                title: "Temps (minutes)"
+                title: "Pourcentage"
             },
 
             legend:{

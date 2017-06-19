@@ -3,19 +3,19 @@
   //on initialise les variables avec les valeurs par défaut
     var duree = "longue";
     var pub = "adu";
-    var nbDePersonnes = 13;
+    var nbDePersonnes = 16;
     var sce = 1;
   //on appuie les boutons en conséquence
     $("#dur_lon").addClass("active");
     $("#pub_adu").addClass("active");
     $("#sce_1").addClass("active");
-    $("#car").load('carousel_long.html');
+    //$("#car").load('carousel_long.html');
 
     //On remplit le champ du bouton +/- avec la valeur par défaut
     $("#inputnb").val(nbDePersonnes);
 
-    var carousel_c = $.get("carousel_court.html");
-    var carousel_l = $.get("carousel_long.html");
+    //var carousel_c = $.get("carousel_court.html");
+    //var carousel_l = $.get("carousel_long.html");
   //On change la valeur des variables en fonction des actions utilisateurs
   //Pour la durée :
     $("#dur_cou").click(function(e){
@@ -27,7 +27,10 @@
       //alert(carousel_c);
       //$("#car").empty();
       $("#car").load('carousel_court.html');
-
+      $("#p1").show();
+      alert("Chargement terminé \n Guide pour atelier court !");
+      $("#rest").hide();
+      $("#plusbtn, #minubtn").click(function(){$("#rest").show();});
     });
     $("#dur_lon").click(function(e){
       duree = "longue";
@@ -36,6 +39,10 @@
       //$("#myCarousel").replaceWith(carousel_l);
       //$("#car").empty();
       $("#car").load('carousel_long.html');
+      $("#p1").show();
+      alert("Chargement terminé \n Guide pour atelier long !");
+      $("#rest").hide();
+      $("#plusbtn, #minubtn").click(function(){$("#rest").show();})
     });
   //Pour le public :
     $("#pub_enf").click(function(e){
