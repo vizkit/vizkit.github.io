@@ -94,7 +94,7 @@ function demoFromHTML() {
 
           doc = new jsPDF('p', 'pt', 'a4', false);      
           
-          logo.src = "../donnees/2.png";
+          logo.src = "1.png";
             doc.addImage(logo, 'JPEG', 2, 2, 590,850);
   
   
