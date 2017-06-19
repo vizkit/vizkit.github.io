@@ -1,3 +1,7 @@
+var duree = "longue";
+var duration_longue = true;
+var duration_courte = false;
+
 
   $(document).ready(function(){
   //on initialise les variables avec les valeurs par défaut
@@ -20,6 +24,8 @@
   //Pour la durée :
     $("#dur_cou").click(function(e){
       duree = "courte";
+      duration_courte = true;
+      duration_longue = false;
       $("#dur_lon").removeClass("active");
       $("#dur_cou").addClass("active");
       //var code = load("carousel_court.html");
@@ -34,6 +40,8 @@
     });
     $("#dur_lon").click(function(e){
       duree = "longue";
+      duration_longue = true;
+      duration_courte =false;
       $("#dur_cou").removeClass("active");
       $("#dur_lon").addClass("active");
       //$("#myCarousel").replaceWith(carousel_l);
