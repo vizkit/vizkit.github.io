@@ -34,6 +34,7 @@
 
       localStorage.duree = 'courte';
 
+
       duree = "courte";
       duration_courte = true;
       duration_longue = false;
@@ -184,7 +185,7 @@ function demoFromHTML() {
 
           if(localStorage.duree == 'longue'){
 
-            if(adult){
+            if(localStorage.type == 'adult'){
               alert("adulto " + localStorage.duree);
               var logo = new Image();
               logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
@@ -199,7 +200,7 @@ function demoFromHTML() {
 
           }else{
             alert(localStorage.duree);
-            if(enfant){
+            if(localStorage.type == 'enfant'){
 
                  alert("enfant_Court");
                 logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
