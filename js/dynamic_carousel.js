@@ -29,7 +29,6 @@ var adult = true;
       duree = "courte";
       duration_courte = true;
       duration_longue = false;
-      alert(duration_courte);
       $("#dur_lon").removeClass("active");
       $("#dur_cou").addClass("active");
       //var code = load("carousel_court.html");
@@ -107,7 +106,7 @@ function demoFromHTML() {
          pdf.text("hello", 30,30);
        logo.src = "1.png";
        pdf.addImage(logo, 'PNG', 2, 2, 590,850);*/
-  alert("duration" + duration_longue);
+  alert(duration_longue);
  
           if(duration_longue){
             
