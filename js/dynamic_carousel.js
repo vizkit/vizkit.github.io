@@ -103,7 +103,7 @@ alert("hola");
  
           if(duration_longue){
             var logo = new Image();
-            logo.src = "donnees/1.png";
+            logo.src = "1.png";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
             pdf.addPage();
             var logo = new Image();
@@ -112,7 +112,7 @@ alert("hola");
            
           
           }else if(duration_courte) {
-            logo.src = "donnees/1.png";
+            logo.src = "1.png";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
             pdf.addPage();
             logo.src = "3.png";
@@ -125,7 +125,7 @@ alert("hola");
 
 
 
-          var paso;
+       /*   var paso;
         for (paso = 4; paso < 6; paso++) {
             pdf.addPage();
             var logo = new Image();
@@ -133,7 +133,7 @@ alert("hola");
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
           // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
         
-          };
+          };*/
 
 
   
