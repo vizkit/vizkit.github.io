@@ -90,7 +90,7 @@ var duration_courte = false;
 
 function demoFromHTML() {
         
-alert("hola");t
+alert("hola");
 
 
      // var pdf = new jsPDF('p', 'pt', 'a4', false);
