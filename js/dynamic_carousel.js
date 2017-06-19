@@ -4,17 +4,13 @@ var enfant = false;
 var adult = true;
 
 
-function demoFromHTML() {
+/*function demoFromHTML() {
         
 
 
 
      var pdf = new jsPDF('p', 'pt', 'a4', false);
-     //var pdf = new jsPDF();
-  /*var logo = new Image();
-         pdf.text("hello", 30,30);
-       logo.src = "1.png";
-       pdf.addImage(logo, 'PNG', 2, 2, 590,850);*/
+  
   alert(duration_longue);
  
           if(duration_longue){
@@ -61,14 +57,14 @@ function demoFromHTML() {
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
           // Se ejecuta 5 veces, con valores desde paso desde 0 hasta 4.
         
-          };*/
+          };
 
 
   
                  
      pdf.output("dataurlnewwindow");
 
-        }
+        }*/
 
 
 
@@ -157,7 +153,7 @@ function demoFromHTML() {
       }
     });
           
-      $("#telecharger").click(function(e){
+      $("#buttonemail").click(function(e){
             
      var pdf = new jsPDF('p', 'pt', 'a4', false);
      //var pdf = new jsPDF();
