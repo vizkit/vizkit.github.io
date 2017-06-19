@@ -107,15 +107,15 @@ alert("hola");
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
             pdf.addPage();
             var logo = new Image();
-            logo.src = "2.png";
-            pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
+            logo.src = "1.png";
+            pdf.addImage(logo, 'PNG', 2, 2, 590,850);
            
           
           }else if(duration_courte) {
             logo.src = "1.png";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
             pdf.addPage();
-            logo.src = "3.png";
+            logo.src = "1.png";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
 
           }
