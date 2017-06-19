@@ -103,19 +103,19 @@ alert("hola");
  
           if(duration_longue){
             var logo = new Image();
-            logo.src = "1.png";
+            logo.src = "/pdf_images/1.png";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
             pdf.addPage();
             var logo = new Image();
-            logo.src = "1.png";
+            logo.src = "/pdf_images/1.png";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
            
           
           }else if(duration_courte) {
-            logo.src = "1.png";
+            logo.src = "/pdf_images/1.png";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
             pdf.addPage();
-            logo.src = "1.png";
+            logo.src = "/pdf_images/1.png";
             pdf.addImage(logo, 'PNG', 2, 2, 590,850);
 
           }
