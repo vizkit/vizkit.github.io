@@ -65,7 +65,7 @@ var adult = true;
     $("#pub_adu").click(function(e){
       pub = "adu";
       adult = true;
-      enfant = flase;
+      enfant = false;
       $("#pub_enf").removeClass("active");
       $("#pub_adu").addClass("active");
     });
