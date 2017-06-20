@@ -307,7 +307,7 @@ groupe = 1;
             }
           // var uno= 1;
           }
-alert("AIIII");
+alert("jujujuuu");
 pdf.output("dataurlnewwindow");
 }
 function visualiser() {
