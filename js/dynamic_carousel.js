@@ -14,12 +14,7 @@
     var pub = "adu";
     var nbDePersonnes = 16;
     var sce = 1;
-    var ima1 = new Image();   
-    ima1.src= "https://vizkit.github.io/pdf_images/long/Long_enfants/long_enfants_dataset1_1.PNG";
-    localStorage.ima_long_enfants_dataset1_1 = ima1;
-    var ima2 = new Image();   
-    ima2.src= "https://vizkit.github.io/pdf_images/long/Long_enfants/long_enfants_dataset1_1.PNG";
-    localStorage.ima_long_enfants_dataset1_2 = ima2;
+  
   //localStorage.numGroupe = nbDePersonnes;
 
   //  localStorage.duree = 'longue_adult';
@@ -173,7 +168,7 @@ groupe = 1;
 
             
 
-            //  var logo = new Image();   
+             var logo = new Image();   
            // for (groupe = 1; groupe < 5; groupe++) {    
              
              
@@ -191,9 +186,11 @@ groupe = 1;
            // }
              
              
-             
+              logo.onload()=function(){
+                alert("1/1");
+                }
                                    
-            //     logo.src = "/pdf_images/court/Court_adults/court_adults_dataset1_1.jpeg";
+                 logo.src = "/pdf_images/court/Court_adults/court_adults_dataset1_1.jpeg";
                 var logo = localStorage.ima_long_enfants_dataset1_1;
                  pdf.addImage(logo, 'PNG', 2, 2, 590,850);
           
@@ -202,6 +199,9 @@ groupe = 1;
           //  var logo2 = new Image();   
              //    logo2.src = "/pdf_images/court/Court_adults/court_adults_dataset1_3.jpeg";
            var logo2 = localStorage.ima_long_enfants_dataset1_2;
+             logo2.onload()=function(){
+                alert("2/1");
+                }
                     pdf.addImage(logo2, 'PNG', 2, 2, 590,850);
                 
                  groupe = groupe +1;
