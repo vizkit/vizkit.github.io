@@ -167,11 +167,11 @@ groupe = 1;
 
             
 
-            //  var logo = new Image();   
+              var logo = new Image();   
            // for (groupe = 1; groupe < 5; groupe++) {    
              
              
-             
+             /*
              for (groupe = 1; groupe < 5; groupe++) {
                  var logo = new Image();
                  logo.src = "/pdf_images/court/Court_adults/court_adults_dataset1_"+groupe+".JPEG";
@@ -181,13 +181,13 @@ groupe = 1;
                  if(groupe < numPErs){
                    pdf.addPage();
                  }
-              }
+              }*/
            // }
              
              
              
                                    
-            /*     logo.src = "/pdf_images/long/Long_adults/long_adults_dataset1_1.jpeg";
+                 logo.src = "/pdf_images/long/Long_adults/long_adults_dataset1_1.jpeg";
                 
                  pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
           
@@ -216,7 +216,7 @@ groupe = 1;
                  if(groupe < numPErs){
                    pdf.addPage();
                  }*/
-           //  }*/
+             //}
             }else{
               for (groupe = 1; groupe < 5; groupe++) {
                  var logo = new Image();
