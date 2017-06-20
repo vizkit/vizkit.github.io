@@ -177,21 +177,21 @@ groupe = 1;
              var logo2 = new Image();   
                  logo2.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".PNG";
                  logo2.onload = function(){
-                    pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+                    pdf.addImage(logo2, 'PNG', 2, 2, 590,850);
                  };
                  groupe = groupe +1;
              pdf.addPage();
              var logo3 = new Image();   
                  logo3.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".PNG";
                  logo3.onload = function(){
-                    pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+                    pdf.addImage(logo3, 'PNG', 2, 2, 590,850);
                  };
                  groupe = groupe +1;
              pdf.addPage();
              var logo4 = new Image();   
                  logo4.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".PNG";
                  logo4.onload = function(){
-                    pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+                    pdf.addImage(logo4, 'PNG', 2, 2, 590,850);
                  };
                  if(groupe < numPErs){
                    pdf.addPage();
