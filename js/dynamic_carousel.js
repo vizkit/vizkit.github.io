@@ -176,7 +176,7 @@ groupe = 1;
                  };
                  groupe = groupe +1;
              pdf.addPage();
-             var logo2 = new Image();   
+      /*       var logo2 = new Image();   
                  logo2.src = "/pdf_images/long/Long_adults/long_adults_dataset1_2.PNG";
                  logo2.onload = function(){
                     pdf.addImage(logo2, 'PNG', 2, 2, 590,850);
@@ -197,7 +197,7 @@ groupe = 1;
                  };
                  if(groupe < numPErs){
                    pdf.addPage();
-                 }
+                 }*/
            //  }
             }else{
               for (groupe = 1; groupe < 5; groupe++) {
