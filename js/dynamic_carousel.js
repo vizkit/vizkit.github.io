@@ -52,7 +52,10 @@
       $("#p1").show();
 //       alert("Chargement terminé \n Guide pour atelier court !");
       $("#rest").hide();
-      $("#plusbtn, #minubtn").click(function(){$("#rest").show();});
+      $("#plusbtn, #minubtn").click(function(){
+       localStorage.numGroupe = $("#inputnb").val();
+       $("#rest").show();
+      });
 
       if (duree == "longue" && enfant) localStorage.duree = "longue_enfant";
       else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
