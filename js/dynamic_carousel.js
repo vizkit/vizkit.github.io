@@ -195,14 +195,14 @@ groupe = 1;
                                    
             //     logo.src = "/pdf_images/court/Court_adults/court_adults_dataset1_1.jpeg";
                 var logo = localStorage.ima_long_enfants_dataset1_1;
-                 pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
+                 pdf.addImage(logo, 'PNG', 2, 2, 590,850);
           
                  groupe = groupe +1;
              pdf.addPage();
           //  var logo2 = new Image();   
              //    logo2.src = "/pdf_images/court/Court_adults/court_adults_dataset1_3.jpeg";
            var logo2 = localStorage.ima_long_enfants_dataset1_2;
-                    pdf.addImage(logo2, 'JPEG', 2, 2, 590,850);
+                    pdf.addImage(logo2, 'PNG', 2, 2, 590,850);
                 
                  groupe = groupe +1;
              pdf.addPage();
