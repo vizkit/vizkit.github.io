@@ -35,8 +35,9 @@
     //var carousel_l = $.get("carousel_long.html");
   //On change la valeur des variables en fonction des actions utilisateurs
    $("#inputnb").change(function(e){
-    //alert( $("#inputnb").val());
+   
      localStorage.numGroupe = $("#inputnb").val();
+     alert( $("#inputnb").val());
    });
    
    
