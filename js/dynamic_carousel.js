@@ -203,9 +203,9 @@ groupe = 1;
            //   }*/
             }else{
               for (groupe = 1; groupe < 5; groupe++) {
-                 var logo5 = new Image();
-                 logo5.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset2_"+groupe+".PNG";
-                 logo5.onload = function(){  
+                 var logo = new Image();
+                 logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset2_"+groupe+".PNG";
+                 logo.onload = function(){  
                     pdf.addImage(logo, 'PNG', 2, 2, 590,850);
                  };
                  if(groupe < numPErs){
