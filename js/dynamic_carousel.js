@@ -166,7 +166,7 @@ groupe = 1;
             if(localStorage.dataset == "un"){
               var cont = 1;
               var logo = new Image();
-              logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
+              logo.src = "/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
               logo.onload = function(){ 
                  pdf.addImage(logo, 'PNG', 2, 2, 590,850);
               }
