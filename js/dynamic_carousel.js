@@ -187,14 +187,14 @@ groupe = 1;
              
              
                                    
-                 logo.src = "/pdf_images/long/Long_adults/long_adults_dataset1_1.jpeg";
+                 logo.src = "/pdf_images/court/Court_adults/court_adults_dataset1_1.gpeg";
                 
                  pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
           
                  groupe = groupe +1;
              pdf.addPage();
             var logo2 = new Image();   
-                 logo2.src = "/pdf_images/long/Long_adults/long_adults_dataset1_2.jpeg";
+                 logo2.src = "/pdf_images/court/Court_adults/court_adults_dataset1_2.jpeg";
            
                     pdf.addImage(logo2, 'JPEG', 2, 2, 590,850);
                 
