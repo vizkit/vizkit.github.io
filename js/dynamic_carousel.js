@@ -74,7 +74,10 @@
       $("#p1").show();
 //       alert("Chargement terminé \n Guide pour atelier long !");
       $("#rest").hide();
-      $("#plusbtn, #minubtn").click(function(){$("#rest").show();})
+      $("#plusbtn, #minubtn").click(function(){
+        localStorage.numGroupe = $("#inputnb").val();
+       $("#rest").show();
+      })
 
       if (duree == "longue" && enfant) localStorage.duree = "longue_enfant";
       else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
@@ -134,13 +137,6 @@
       }
     });
    
-   $("#minusBtn").click(function(e){
-     localStorage.numGroupe = $("#inputnb").val();
-   });
-   $("#minusBtn").clicl(function(e){
-     localStorage.numGroupe = $("#inputnb").val();
-    
-   });
    localStorage.numGroupe = $("#inputnb").val();
    
 
