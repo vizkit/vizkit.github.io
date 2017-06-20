@@ -167,10 +167,27 @@ groupe = 1;
 
             
 
-              var logo = new Image();   
-      //       for (groupe = 1; groupe < 5; groupe++) {          
+            //  var logo = new Image();   
+           // for (groupe = 1; groupe < 5; groupe++) {    
+             
+             
+             
+             for (groupe = 1; groupe < 5; groupe++) {
+                 var logo = new Image();
+                 logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset2_"+groupe+".PNG";
+                 logo.onload = function(){  
+                    pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+                 };
+                 if(groupe < numPErs){
+                   pdf.addPage();
+                 }
+              }
+           // }
+             
+             
+             
                                    
-                 logo.src = "/pdf_images/long/Long_adults/long_adults_dataset1_1.jpeg";
+            /*     logo.src = "/pdf_images/long/Long_adults/long_adults_dataset1_1.jpeg";
                 
                  pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
           
@@ -199,7 +216,7 @@ groupe = 1;
                  if(groupe < numPErs){
                    pdf.addPage();
                  }*/
-           //  }
+           //  }*/
             }else{
               for (groupe = 1; groupe < 5; groupe++) {
                  var logo = new Image();
