@@ -175,22 +175,22 @@ groupe = 1;
                  groupe = groupe +1;
              pdf.addPage();
              var logo2 = new Image();   
-                 logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".PNG";
-                 logo.onload = function(){
+                 logo2.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".PNG";
+                 logo2.onload = function(){
                     pdf.addImage(logo, 'PNG', 2, 2, 590,850);
                  };
                  groupe = groupe +1;
              pdf.addPage();
              var logo3 = new Image();   
-                 logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".PNG";
-                 logo.onload = function(){
+                 logo3.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".PNG";
+                 logo3.onload = function(){
                     pdf.addImage(logo, 'PNG', 2, 2, 590,850);
                  };
                  groupe = groupe +1;
              pdf.addPage();
              var logo4 = new Image();   
-                 logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".PNG";
-                 logo.onload = function(){
+                 logo4.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".PNG";
+                 logo4.onload = function(){
                     pdf.addImage(logo, 'PNG', 2, 2, 590,850);
                  };
                  if(groupe < numPErs){
@@ -199,9 +199,9 @@ groupe = 1;
            //   }
             }else{
               for (groupe = 1; groupe < 5; groupe++) {
-                 var logo = new Image();
-                 logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset2_"+groupe+".PNG";
-                 logo.onload = function(){  
+                 var logo5 = new Image();
+                 logo5.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset2_"+groupe+".PNG";
+                 logo5.onload = function(){  
                     pdf.addImage(logo, 'PNG', 2, 2, 590,850);
                  };
                  if(groupe < numPErs){
