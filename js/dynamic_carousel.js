@@ -149,7 +149,7 @@
   });
 
 
-function demoFromHTML() {
+function generer() {
 
 
 
@@ -252,7 +252,8 @@ function demoFromHTML() {
           // var uno= 1;
           }
 
-
+}
+function visualiser() {
         pdf.output("dataurlnewwindow");
 
 }
