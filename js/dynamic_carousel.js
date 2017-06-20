@@ -167,7 +167,9 @@ groupe = 1;
               var cont = 1;
               var logo = new Image();
               logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
-              pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+              logo.onload = function(){ 
+                 pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+              }
              alert("holq");
          /*     var logo = new Image();   
          //     for (groupe = 1; groupe < 5; groupe++) {          
