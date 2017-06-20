@@ -210,7 +210,7 @@ groupe = 1;
                    pdf.addPage();
                 };
 
-                 logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset2_1.PNG"";
+                 logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset2_1.PNG";
                 }    
 
                 var logo2 = new Image();   
@@ -218,7 +218,7 @@ groupe = 1;
                     pdf.addImage(logo2, 'PNG', 2, 2, 590,850);
                     pdf.addPage();
                 };
-                 logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset2_2.PNG"";
+                 logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset2_2.PNG";
 
 
                 var logo3 = new Image();   
