@@ -169,15 +169,44 @@ groupe = 1;
             
 
           
-            for (groupe = 1; groupe < 5; groupe++) {    
-          var logo = new Image();   
-          logo.onload = function(){ // always fires the event
-                    pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+           // for (groupe = 1; groupe < 5; groupe++) {    
+          var logo1 = new Image();   
+          logo1.onload = function(){ // always fires the event
+                    pdf.addImage(logo1, 'PNG', 2, 2, 590,850);
            pdf.addPage();
           };
            
-          logo.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_"+groupe+".PNG";
-         }
+          logo1.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_1.PNG";
+             
+             
+          var logo2 = new Image();   
+          logo2.onload = function(){ // always fires the event
+                    pdf.addImage(logo2, 'PNG', 2, 2, 590,850);
+           pdf.addPage();
+          };
+           
+          logo2.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_2.PNG";
+             
+             
+          var logo3 = new Image();   
+          logo3.onload = function(){ // always fires the event
+                    pdf.addImage(logo3, 'PNG', 2, 2, 590,850);
+           pdf.addPage();
+          };
+           
+          logo3.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_3.PNG";   
+             
+          var logo4 = new Image();   
+          logo4.onload = function(){ // always fires the event
+                    pdf.addImage(logo4, 'PNG', 2, 2, 590,850);
+           pdf.addPage();
+          };
+           
+          logo4.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_4.PNG";  
+             
+             
+             
+        // }
          /*    var logo2 = new Image();   
            // for (groupe = 1; groupe < 5; groupe++) {    
             
