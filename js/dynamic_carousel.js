@@ -14,7 +14,7 @@
     var pub = "adu";
     var nbDePersonnes = 16;
     var sce = 1;
-    localStorage.numGroupe = nbDePersonnes;
+  //localStorage.numGroupe = nbDePersonnes;
 
   //  localStorage.duree = 'longue_adult';
 
