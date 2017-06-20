@@ -115,15 +115,13 @@
   //Pour le scénario :
     $("#sce_2").click(function(e){
       sce = 2;
-     localStorage.dataset2 = true;
-     localStorage.dataset1 = false;
+     localStorage.dataset = "deux";
       $("#sce_1").removeClass("active");
       $("#sce_2").addClass("active");
     });
     $("#sce_1").click(function(e){
       sce = 1;
-      localStorage.dataset2 = false;
-      localStorage.dataset1 = true;
+      localStorage.dataset = "un";
       $("#sce_2").removeClass("active");
       $("#sce_1").addClass("active");
     });
@@ -152,10 +150,10 @@ function demoFromHTML() {
 
     var logo = new Image();
 
-    alert(localStorage.dataset1);
+    alert(localStorage.dataset);
 
           if(localStorage.duree == "longue_adult"){
-            if(localStorage.dataset1){
+            if(localStorage.dataset == "un"){
               logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
               pdf.addImage(logo, 'PNG', 2, 2, 590,850);
               pdf.addPage();
@@ -166,7 +164,7 @@ function demoFromHTML() {
             }
           }
           else if(localStorage.duree == "longue_enfant"){
-            if(localStorage.dataset1){
+            if(localStorage.dataset == "un"){
               logo.src = "https://vizkit.github.io/pdf_images/long/Long_enfants/long_enfants_dataset1_1.PNG";
               pdf.addImage(logo, 'PNG', 2, 2, 590,850);
               pdf.addPage();
@@ -178,7 +176,7 @@ function demoFromHTML() {
 
       }
       else if(localStorage.duree == "courte_enfant"){
-            if(localStorage.dataset1){
+            if(localStorage.dataset == "un"){
                 logo.src = "https://vizkit.github.io/pdf_images/court/Court_enfants/court_enfants_dataset1_1.PNG";
                 pdf.addImage(logo, 'PNG', 2, 2, 590,850);
                 pdf.addPage();
@@ -190,8 +188,7 @@ function demoFromHTML() {
 
           }
           else {
-            if(localStorage.dataset1){
-             
+            if(localStorage.dataset == "un"){
               logo.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_1.PNG";
               pdf.addImage(logo, 'PNG', 2, 2, 590,850);
               pdf.addPage();
