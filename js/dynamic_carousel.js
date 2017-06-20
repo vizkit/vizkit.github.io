@@ -174,18 +174,21 @@ groupe = 1;
                  };
                  groupe = groupe +1;
              pdf.addPage();
+             var logo2 = new Image();   
                  logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".PNG";
                  logo.onload = function(){
                     pdf.addImage(logo, 'PNG', 2, 2, 590,850);
                  };
                  groupe = groupe +1;
              pdf.addPage();
+             var logo3 = new Image();   
                  logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".PNG";
                  logo.onload = function(){
                     pdf.addImage(logo, 'PNG', 2, 2, 590,850);
                  };
                  groupe = groupe +1;
              pdf.addPage();
+             var logo4 = new Image();   
                  logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".PNG";
                  logo.onload = function(){
                     pdf.addImage(logo, 'PNG', 2, 2, 590,850);
