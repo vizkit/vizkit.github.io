@@ -14,7 +14,7 @@
     var pub = "adu";
     var nbDePersonnes = 16;
     var sce = 1;
-    localStorage.numGroupe = $("#inputnb").val();
+    localStorage.numGroupe = nbDePersonnes;
 
   //  localStorage.duree = 'longue_adult';
 
@@ -34,6 +34,11 @@
     //var carousel_c = $.get("carousel_court.html");
     //var carousel_l = $.get("carousel_long.html");
   //On change la valeur des variables en fonction des actions utilisateurs
+   $("#inputnb").change(function(e){
+    alert( $("#inputnb").val());
+   });
+   
+   
   //Pour la durée :
     $("#dur_cou").click(function(e){
 
@@ -52,10 +57,7 @@
       $("#p1").show();
 //       alert("Chargement terminé \n Guide pour atelier court !");
       $("#rest").hide();
-      $("#plusbtn, #minubtn").click(function(){
-       localStorage.numGroupe = $("#inputnb").val();
-       $("#rest").show();
-      });
+      $("#plusbtn, #minubtn").click(function(){$("#rest").show();});
 
       if (duree == "longue" && enfant) localStorage.duree = "longue_enfant";
       else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
@@ -78,10 +80,7 @@
       $("#p1").show();
 //       alert("Chargement terminé \n Guide pour atelier long !");
       $("#rest").hide();
-      $("#plusbtn, #minubtn").click(function(){
-        localStorage.numGroupe = $("#inputnb").val();
-       $("#rest").show();
-      })
+      $("#plusbtn, #minubtn").click(function(){$("#rest").show();})
 
       if (duree == "longue" && enfant) localStorage.duree = "longue_enfant";
       else if (duree == "courte" && adult) localStorage.duree = "courte_adult";
