@@ -37,7 +37,7 @@
    $("#inputnb").change(function(e){
      var numpers = $("#inputnb").val();
      localStorage.numGroupe = numpers;
-     alert( localStorage.numGroupe).val());
+     alert( localStorage.numGroupe);
    });
    
    
