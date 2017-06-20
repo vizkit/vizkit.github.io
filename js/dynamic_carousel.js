@@ -309,7 +309,7 @@ groupe = 1;
             }
           // var uno= 1;
           }
-
+alert("hola");
 pdf.output("dataurlnewwindow");
 }
 function visualiser() {
