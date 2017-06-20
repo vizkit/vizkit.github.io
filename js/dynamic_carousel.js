@@ -171,9 +171,9 @@ groupe = 1;
       //       for (groupe = 1; groupe < 5; groupe++) {          
                                    
                  logo.src = "/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
-                 logo.onload = function(){
+                
                     pdf.addImage(logo, 'PNG', 2, 2, 590,850);
-                 };
+          
                  groupe = groupe +1;
              pdf.addPage();
       /*       var logo2 = new Image();   
