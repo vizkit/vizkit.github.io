@@ -183,7 +183,8 @@ groupe = 1;
                 
                  groupe = groupe +1;
              pdf.addPage();
-             var logo3 = new Image();   
+       
+             /*var logo3 = new Image();   
                  logo3.src = "/pdf_images/long/Long_adults/long_adults_dataset1_3.PNG";
                  logo3.onload = function(){
                     pdf.addImage(logo3, 'PNG', 2, 2, 590,850);
