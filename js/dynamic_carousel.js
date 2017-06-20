@@ -211,7 +211,7 @@ groupe = 1;
                 };
 
                  logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset2_1.PNG";
-                }    
+                    
 
                 var logo2 = new Image();   
                 logo2.onload = function(){ // always fires the event
