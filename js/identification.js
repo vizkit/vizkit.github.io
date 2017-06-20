@@ -3,8 +3,8 @@
 
 var pdf;
 
-  $(window).ready(function(){
-  
+ // $(window).ready(function(){
+  function pdf_page(){
        pdf = new jsPDF('p', 'pt', 'a4', false);
  
 
@@ -107,8 +107,8 @@ var pdf;
           }
 
 
-  });
-
+  //});
+  }
 
 function demoFromHTML() {
  
