@@ -115,15 +115,15 @@
   //Pour le scénario :
     $("#sce_2").click(function(e){
       sce = 2;
-     localStorage.dataset1 = true;
-     localStorage.dataset2 = false;
+     localStorage.dataset2 = true;
+     localStorage.dataset1 = false;
       $("#sce_1").removeClass("active");
       $("#sce_2").addClass("active");
     });
     $("#sce_1").click(function(e){
       sce = 1;
-      localStorage.dataset1 = false;
-      localStorage.dataset2 = true;
+      localStorage.dataset2 = false;
+      localStorage.dataset1 = true;
       $("#sce_2").removeClass("active");
       $("#sce_1").addClass("active");
     });
