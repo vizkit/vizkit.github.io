@@ -161,8 +161,6 @@ function demoFromHTML() {
     var logo = new Image();
 
     var numPErs =  (parseInt(localStorage.numGroupe));
- 
-    alert(numPErs);
 
           if(localStorage.duree == "longue_adult"){
             if(localStorage.dataset == "un"){
