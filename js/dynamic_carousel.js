@@ -165,7 +165,7 @@ groupe = 1;
           if(localStorage.duree == "longue_adult"){
             if(localStorage.dataset == "un"){
 
-             alert("canvicanvi");
+            
 
               var logo = new Image();   
       //       for (groupe = 1; groupe < 5; groupe++) {          
