@@ -171,7 +171,7 @@ groupe = 1;
                  pdf.addImage(logo, 'PNG', 2, 2, 590,850);
               }
 
-             alert("pdfPRET");
+             alert("sii");
   pdf.output("dataurlnewwindow");
          /*     var logo = new Image();   
          //     for (groupe = 1; groupe < 5; groupe++) {          
