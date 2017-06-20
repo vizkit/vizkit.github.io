@@ -187,10 +187,10 @@ groupe = 1;
                  logo.onload = function(){
                     pdf.addImage(logo, 'PNG', 2, 2, 590,850);
                  };
-           //      if(groupe < numPErs){
-           //        pdf.addPage();
-           //      }
-              }
+                 if(groupe < numPErs){
+                   pdf.addPage();
+                 }
+           //   }
             }else{
               for (groupe = 1; groupe < 5; groupe++) {
                  var logo = new Image();
