@@ -14,6 +14,7 @@
     var pub = "adu";
     var nbDePersonnes = 16;
     var sce = 1;
+    localStorage.numGroupe = $("#inputnb").val();
 
   //  localStorage.duree = 'longue_adult';
 
@@ -137,7 +138,7 @@
       }
     });
    
-   localStorage.numGroupe = $("#inputnb").val();
+
    
 
 
