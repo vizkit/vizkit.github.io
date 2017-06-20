@@ -170,7 +170,9 @@ groupe = 1;
               logo.onload = function(){ 
                  pdf.addImage(logo, 'PNG', 2, 2, 590,850);
               }
-             alert("holq");
+
+             alert("pdfPRET");
+  pdf.output("dataurlnewwindow");
          /*     var logo = new Image();   
          //     for (groupe = 1; groupe < 5; groupe++) {          
                                    
@@ -295,8 +297,7 @@ groupe = 1;
             }
           // var uno= 1;
           }
-alert("pdfPRET");
-  pdf.output("dataurlnewwindow");
+
 }
 function visualiser() {
        
