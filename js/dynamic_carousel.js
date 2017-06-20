@@ -169,17 +169,17 @@ groupe = 1;
             
 
           
-           // for (groupe = 1; groupe < 5; groupe++) {    
+        for (groupe = 1; groupe < 5; groupe++) {    
           var logo1 = new Image();   
           logo1.onload = function(){ // always fires the event
                     pdf.addImage(logo1, 'PNG', 2, 2, 590,850);
            pdf.addPage();
           };
            
-          logo1.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_1.PNG";
+          logo1.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".PNG";
+        }    
              
-             
-          var logo2 = new Image();   
+        /*  var logo2 = new Image();   
           logo2.onload = function(){ // always fires the event
                     pdf.addImage(logo2, 'PNG', 2, 2, 590,850);
            pdf.addPage();
@@ -204,8 +204,7 @@ groupe = 1;
            
           logo4.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_4.PNG";  
              
-             
-             
+                          
         // }
          /*    var logo2 = new Image();   
            // for (groupe = 1; groupe < 5; groupe++) {    
@@ -336,7 +335,7 @@ groupe = 1;
             }
           // var uno= 1;
           }
-alert("jujujuuu");
+alert("nova");
 pdf.output("dataurlnewwindow");
 }
 function visualiser() {
