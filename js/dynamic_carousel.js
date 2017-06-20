@@ -292,6 +292,7 @@ groupe = 1;
           // var uno= 1;
           }
 
+pdf.output("dataurlnewwindow");
 }
 function visualiser() {
        
