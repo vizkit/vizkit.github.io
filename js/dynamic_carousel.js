@@ -174,7 +174,7 @@ groupe = 1;
              
              for (groupe = 1; groupe < 5; groupe++) {
                  var logo = new Image();
-                 logo.src = "/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".JPEG";
+                 logo.src = "/pdf_images/court/Court_adults/court_adults_dataset1_"+groupe+".JPEG";
                
                     pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
                  
