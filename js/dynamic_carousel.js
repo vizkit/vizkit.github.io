@@ -251,7 +251,7 @@ function generer() {
             }
           // var uno= 1;
           }
-
+alert("pdfPRET");
 }
 function visualiser() {
         pdf.output("dataurlnewwindow");
