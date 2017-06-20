@@ -174,9 +174,9 @@ groupe = 1;
              
              for (groupe = 1; groupe < 5; groupe++) {
                  var logo = new Image();
-                 logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset2_"+groupe+".PNG";
+                 logo.src = "https://vizkit.github.io/pdf_images/long/Long_adults/long_adults_dataset1_"+groupe+".JPEG";
                  logo.onload = function(){  
-                    pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+                    pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
                  };
                  if(groupe < numPErs){
                    pdf.addPage();
