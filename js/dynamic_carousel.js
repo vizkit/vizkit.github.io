@@ -133,6 +133,16 @@
         $("#pointLien").attr('href','graphiques_adultes.html');
       }
     });
+   
+   $("#minusBtn").click(function(e){
+     localStorage.numGroupe = $("#inputnb").val();
+   });
+   $("#minusBtn").clicl(function(e){
+     localStorage.numGroupe = $("#inputnb").val();
+    
+   });
+   localStorage.numGroupe = $("#inputnb").val();
+   
 
 
 
@@ -150,7 +160,7 @@ function demoFromHTML() {
 
     var logo = new Image();
 
-    alert(localStorage.dataset);
+    alert(localStorage.numGroupe);
 
           if(localStorage.duree == "longue_adult"){
             if(localStorage.dataset == "un"){
