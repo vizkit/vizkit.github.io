@@ -172,17 +172,17 @@ groupe = 1;
            // for (groupe = 1; groupe < 5; groupe++) {    
             
           logo.onload = function(){ // always fires the event
-                    pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
+                    pdf.addImage(logo, 'PNG', 2, 2, 590,850);
            pdf.addPage();
           };
-          logo.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_1.JPEG";
+          logo.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_1.PNG";
              var logo2 = new Image();   
            // for (groupe = 1; groupe < 5; groupe++) {    
             
           logo2.onload = function(){ // always fires the event
-                    pdf.addImage(logo2, 'JPEG', 2, 2, 590,850);
+                    pdf.addImage(logo2, 'PNG', 2, 2, 590,850);
           };
-          logo2.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_2.JPEG";
+          logo2.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_2.PNG";
              
              /*
              for (groupe = 1; groupe < 5; groupe++) {
