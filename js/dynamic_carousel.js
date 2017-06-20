@@ -187,7 +187,7 @@ groupe = 1;
              
              
                                    
-                 logo.src = "/pdf_images/court/Court_adults/court_adults_dataset1_1.gpeg";
+                 logo.src = "/pdf_images/court/Court_adults/court_adults_dataset1_1.jpeg";
                 
                  pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
           
