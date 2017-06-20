@@ -173,7 +173,7 @@ groupe = 1;
 
           
         for (groupe = 1; groupe < 5; groupe++) {    
-          var logos[groupe] = new Image();   
+          logos[groupe] = new Image();   
           logos[groupe].onload = function(){ // always fires the event
                     pdf.addImage(logos[groupe], 'PNG', 2, 2, 590,850);
            pdf.addPage();
