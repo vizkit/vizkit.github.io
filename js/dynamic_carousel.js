@@ -170,16 +170,16 @@ groupe = 1;
               var logo = new Image();   
       //       for (groupe = 1; groupe < 5; groupe++) {          
                                    
-                 logo.src = "/pdf_images/long/Long_adults/long_adults_dataset1_1.PNG";
+                 logo.src = "/pdf_images/long/Long_adults/long_adults_dataset1_1.jpeg";
                 
-                 pdf.addImage(logo, 'PNG', 2, 2, 590,850);
+                 pdf.addImage(logo, 'JPEG', 2, 2, 590,850);
           
                  groupe = groupe +1;
              pdf.addPage();
             var logo2 = new Image();   
-                 logo2.src = "/pdf_images/long/Long_adults/long_adults_dataset1_2.PNG";
+                 logo2.src = "/pdf_images/long/Long_adults/long_adults_dataset1_2.jpeg";
            
-                    pdf.addImage(logo2, 'PNG', 2, 2, 590,850);
+                    pdf.addImage(logo2, 'JPEG', 2, 2, 590,850);
                 
                  groupe = groupe +1;
              pdf.addPage();
