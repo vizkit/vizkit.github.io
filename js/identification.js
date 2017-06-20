@@ -3,7 +3,7 @@
 
 var pdf;
 
-  $(document).ready(function(){
+  $(window).ready(function(){
   
        pdf = new jsPDF('p', 'pt', 'a4', false);
 
