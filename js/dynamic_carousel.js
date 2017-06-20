@@ -168,15 +168,17 @@ groupe = 1;
 
             
 
+          
+            for (groupe = 1; groupe < 5; groupe++) {    
           var logo = new Image();   
-           // for (groupe = 1; groupe < 5; groupe++) {    
-            
           logo.onload = function(){ // always fires the event
                     pdf.addImage(logo, 'PNG', 2, 2, 590,850);
            pdf.addPage();
           };
-          logo.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_1.PNG";
-             var logo2 = new Image();   
+           
+          logo.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_"+groupe+".PNG";
+         }
+         /*    var logo2 = new Image();   
            // for (groupe = 1; groupe < 5; groupe++) {    
             
           logo2.onload = function(){ // always fires the event
