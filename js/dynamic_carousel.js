@@ -760,7 +760,7 @@ groupe = 1;
                    pdf.addPage();
                 };
 
-                logo1.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_1.PNG";
+                logo1.src = "https://vizkit.github.io/pdf_images/court/Court_adults/court_adults_dataset1_11.PNG";
             
 
                 var logo2 = new Image();   
